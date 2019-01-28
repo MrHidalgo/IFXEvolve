@@ -1652,4 +1652,188 @@ picture {
   text-align: center;
 }
 
+/* line 3, src/scss/_components/_faqs.scss */
+.e-faqs {
+  padding-top: 100px;
+  padding-bottom: 89px;
+  background-color: #fff;
+}
+
+/* line 8, src/scss/_components/_faqs.scss */
+.e-faqs__wrapper {
+  width: 100%;
+  max-width: 748px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 15, src/scss/_components/_faqs.scss */
+.e-faqs__title {
+  padding-bottom: 24px;
+  font-weight: bold;
+  line-height: 128px;
+  font-size: 100px;
+  color: #000000;
+}
+
+/* line 23, src/scss/_components/_faqs.scss */
+.e-faqs__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+/* line 28, src/scss/_components/_faqs.scss */
+.e-faqs__block:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 33, src/scss/_components/_faqs.scss */
+.e-faqs__block.is-open .e-faqs__block-head {
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 40, src/scss/_components/_faqs.scss */
+.e-faqs__block.is-open div span:after {
+  left: 50%;
+  -webkit-transform: translateX(-1px) rotate(90deg);
+      -ms-transform: translateX(-1px) rotate(90deg);
+          transform: translateX(-1px) rotate(90deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 49, src/scss/_components/_faqs.scss */
+.e-faqs__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 54, src/scss/_components/_faqs.scss */
+.e-faqs__block-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 5px 30px;
+  background-color: #EDEFF2;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 63, src/scss/_components/_faqs.scss */
+.e-faqs__block-head > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 69, src/scss/_components/_faqs.scss */
+.e-faqs__block-head > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 78px;
+}
+
+/* line 76, src/scss/_components/_faqs.scss */
+.e-faqs__block-head p {
+  font-family: SF Pro Text, sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* line 84, src/scss/_components/_faqs.scss */
+.e-faqs__block-head span {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+/* line 89, src/scss/_components/_faqs.scss */
+.e-faqs__block-head span:before, .e-faqs__block-head span:after {
+  content: '';
+  position: absolute;
+  background: #12368D;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+}
+
+/* line 97, src/scss/_components/_faqs.scss */
+.e-faqs__block-head span:before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+}
+
+/* line 105, src/scss/_components/_faqs.scss */
+.e-faqs__block-head span:after {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 116, src/scss/_components/_faqs.scss */
+.e-faqs__block-body {
+  display: none;
+  padding: 0 100px 40px 30px;
+}
+
+/* line 120, src/scss/_components/_faqs.scss */
+.e-faqs__block-body p {
+  font-family: SF Pro Text, sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  color: #333333;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

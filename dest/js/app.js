@@ -119,6 +119,17 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initFaqsCollapse = function initFaqsCollapse() {
+    $('[faqa-btn-js]').on('click', function (ev) {
+      var _elem = $(ev.currentTarget),
+          _parentNode = _elem.closest('.e-faqs__block'),
+          _bodyNode = _elem.siblings('.e-faqs__block-body');
+
+      _parentNode.toggleClass('is-open');
+      _bodyNode.slideToggle();
+    });
+  };
+
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -139,6 +150,7 @@ $(document).ready(function (ev) {
     // callback
     // ==========================================
     initGetStartedScreen();
+    initFaqsCollapse();
   };
   initJquery();
 });

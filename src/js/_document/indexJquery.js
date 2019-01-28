@@ -76,6 +76,17 @@ $(document).ready((ev) => {
     });
   };
 
+	const initFaqsCollapse = () => {
+	  $('[faqa-btn-js]').on('click', (ev) => {
+	    const _elem = $(ev.currentTarget),
+        _parentNode = _elem.closest('.e-faqs__block'),
+        _bodyNode = _elem.siblings('.e-faqs__block-body');
+
+      _parentNode.toggleClass('is-open');
+      _bodyNode.slideToggle();
+    });
+  };
+
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -98,6 +109,7 @@ $(document).ready((ev) => {
     // callback
 		// ==========================================
     initGetStartedScreen();
+    initFaqsCollapse();
   };
   initJquery();
 });

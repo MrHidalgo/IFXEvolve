@@ -1,0 +1,96 @@
+// SECTION faqs :: START
+
+-
+  var faqsData = [
+    {
+      title: 'Who can join IFXEvolve',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Does every trader automatically qualify for financial backing?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Can I register by using my demo account?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Can I use my existing MT4 account held with another broker to register?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'What is the assessment criteria?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Are there any trading restrictions that apply?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'How long does it take for a trader to qualify for funding?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'How long will it take to become a professional trader?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Why is an IFX Live account the only acceptable account?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'What is the minimum amount I need to fund my account with?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Why do I need to fund a portion of the trading account?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'How much funding can I expect to receive?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'How much can I expect to earn in the Evolve program/initiative',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Can I withdraw my funds?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Will I be compensated for any losses?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Does IFXEvolve provide training?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Can I leave the IFXEvolve program?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+    {
+      title: 'Can I be removed from the IFXEvolve program?',
+      desc: 'Evolve is developed to assist gifted traders advancing their trading careers at their own pace, and no time frame is set.'
+    },
+  ];
+
+section#e-faqs.e-faqs
+  .c-grid
+    .e-faqs__wrapper
+
+      h1.e-faqs__title!= "FAQS"
+
+      .e-faqs__block-wrapper
+        each val, idx in faqsData
+          .e-faqs__block(class!= "e-faqs__block-" + idx)
+            a.e-faqs__block-head(href="#" class="" title="" faqa-btn-js)
+              div
+                p!= faqsData[idx].title
+              div
+                span
+            .e-faqs__block-body
+              p!= faqsData[idx].desc
+
+// SECTION faqs :: END
