@@ -5,14 +5,14 @@
 // ==================================================
 
 // form
-$form-width: 600px;
+$form-width: 400px;
 
 // group
 $form-field-group-two-margin: 15px;
 $form-field-group-three-margin: 15px;
 
 // field
-$form-field-margin: 30px;
+$form-field-margin: 20px;
 $form-field-input-height: 50px;
 $form-field-radio-height: $form-field-input-height;
 $form-field-checkbox-height: $form-field-input-height;
@@ -26,15 +26,15 @@ $form-label-font-size: 16px;
 $form-label-font-weight: normal;
 
 // input
-$form-input-border-radius: 5px;
+$form-input-border-radius: 4px;
 $form-input-border-width: 1px;
-$form-input-border-color: gray;
+$form-input-border-color: rgba($c-black, 0.1);
 $form-input-box-shadow: none;
 $form-input-padding: 0 20px;
 $form-input-color: #000;
 $form-input-font-size: 16px;
 $form-input-font-weight: normal;
-$form-input-placeholder-color: #666;
+$form-input-placeholder-color: rgba($c-black, 0.5);
 $form-input-placeholder-font-size: 16px;
 $form-input-placeholder-font-weight: normal;
 
@@ -55,14 +55,15 @@ $form-radio-icon-inner-background-color: rgba(#000, 1);
 
 // checkbox
 $form-checkbox-icon-wrapper-width: 30px;
-$form-checkbox-icon-width: 25px;
+$form-checkbox-icon-width: 20px;
 $form-checkbox-icon-height: $form-checkbox-icon-width;
-$form-checkbox-icon-border-radius: 5px;
+$form-checkbox-icon-border-radius: 4px;
 $form-checkbox-icon-border-width: 1px;
-$form-checkbox-icon-border-color-inactive: rgba(#000, 0.5);
+$form-checkbox-icon-border-color-inactive: rgba(#000, 0.1);
 $form-checkbox-icon-border-color-active: rgba(#000, 1);
-$form-checkbox-font-size: 16px;
+$form-checkbox-font-size: 14px;
 $form-checkbox-font-weight: normal;
+$form-checkbox-font-color: rgba($c-black, 0.5);
 $form-checkbox-icon-inner-width: 6px;
 $form-checkbox-icon-inner-height: $form-checkbox-icon-inner-width * 2;
 $form-checkbox-icon-inner-border-color: rgba(#000, 1);
@@ -105,6 +106,7 @@ $form-notify-font-weight: bold;
   max-width: $form-width;
   margin-left: auto;
   margin-right: auto;
+  font-family: Open Sans, sans-serif;
 
   &.is-focus {}
 
@@ -607,6 +609,7 @@ $form-notify-font-weight: bold;
 
     &-text {
       max-width: calc(100% - #{$form-checkbox-icon-wrapper-width});
+      color: $form-checkbox-font-color;
       font-size: $form-checkbox-font-size;
       font-weight: $form-checkbox-font-weight;
     }

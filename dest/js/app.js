@@ -81,16 +81,11 @@ $(document).ready(function (ev) {
 
       var _btnBack = $('.e-started-back');
 
-      console.log("_elemName: ", _elemName);
-      console.log("_elemID: ", _elemID);
-
       var nextScreen = function nextScreen(name, id) {
-        console.log("nextScreen: " + name + " : " + id);
         $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
       };
 
       var prevScreen = function prevScreen(id) {
-        console.log("nextScreen: " + id);
         $('.e-started__row[e-started-screen="' + id + '"]').show();
       };
 
@@ -111,24 +106,12 @@ $(document).ready(function (ev) {
       }
 
       _name = _elem.data('subname') !== undefined ? _elem.data('subname') : _elemName;
-      console.log("_name: ", _name);
     });
 
     $('.e-started-back').on('click', function (ev) {
-      // let _prevState = _name;
-
-      console.log("_elemID: ", _id);
-      console.log("_elemName: ", _name);
-      // console.log(`_prevState: `, _prevState);
-
       if (_id === 1) {
         backToMain();
       } else {
-        console.log("initBackBtn else");
-        // if(_name === 'back') {
-        //   _name = _prevState;
-        // }
-
         $('.e-started__row--' + _name + '[e-started-screen="' + _id + '"]').hide();
         $('.e-started__row--' + _name + '[e-started-screen="' + (_id - 1) + '"]').show();
         _id--;

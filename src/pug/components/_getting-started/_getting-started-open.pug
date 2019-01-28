@@ -1,0 +1,18 @@
+// SECTION getting started :: START
+
+.e-started__row.e-started__row-6.e-started__row--no(e-started-screen='2')
+
+  p.e-started__title!= "Open Live Account"
+
+  form.c-form(action='' method='' autocomplete='off')
+
+    +formInput(dataFormObj.inputName)
+    +formInput(dataFormObj.inputSurname)
+    +formInput(dataFormObj.inputMT4Number)
+    +formInput(dataFormObj.inputEmail)
+    +formInput(dataFormObj.inputContactNumber)
+    +formCheckbox(dataFormObj.checkboxField1)
+    +formCheckbox(dataFormObj.checkboxField2)
+    +formBtn('', 'e-started__btn', 'Register Now')
+
+// SECTION getting started :: END

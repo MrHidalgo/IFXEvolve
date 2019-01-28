@@ -285,6 +285,835 @@ picture {
   line-height: 1;
 }
 
+/* line 104, src/scss/_macros/_form.scss */
+.c-form {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Open Sans, sans-serif;
+}
+
+/* line 115, src/scss/_macros/_form.scss */
+.c-form__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 119, src/scss/_macros/_form.scss */
+.c-form__group--two, .c-form__group--three {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 125, src/scss/_macros/_form.scss */
+.c-form__group--two .c-form__group-col {
+  width: -webkit-calc((100% - 15px) / 2);
+  width: calc((100% - 15px) / 2);
+}
+
+/* line 131, src/scss/_macros/_form.scss */
+.c-form__group--three .c-form__group-col {
+  width: -webkit-calc((100% - 15px) / 3);
+  width: calc((100% - 15px) / 3);
+}
+
+/* line 143, src/scss/_macros/_form.scss */
+.c-form__field {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* line 153, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__notify, .c-form__field.is-invalid .c-form__notify, .c-form__field.is-warning .c-form__notify, .c-form__field.is-info .c-form__notify {
+  display: block;
+}
+
+/* line 156, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__label, .c-form__field.is-invalid .c-form__label, .c-form__field.is-warning .c-form__label, .c-form__field.is-info .c-form__label {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 159, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__input,
+.c-form__field.is-error .c-form__textarea, .c-form__field.is-invalid .c-form__input,
+.c-form__field.is-invalid .c-form__textarea, .c-form__field.is-warning .c-form__input,
+.c-form__field.is-warning .c-form__textarea, .c-form__field.is-info .c-form__input,
+.c-form__field.is-info .c-form__textarea {
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 163, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__select-wrapper,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-invalid .c-form__select-wrapper,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-warning .c-form__select-wrapper,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-info .c-form__select-wrapper,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-icon i {
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 169, src/scss/_macros/_form.scss */
+.c-form__field.is-error .c-form__notify li, .c-form__field.is-invalid .c-form__notify li, .c-form__field.is-warning .c-form__notify li, .c-form__field.is-info .c-form__notify li {
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 177, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__label, .c-form__field.is-error .c-form__label {
+  color: #cc0000;
+}
+
+/* line 180, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__input,
+.c-form__field.is-invalid .c-form__textarea, .c-form__field.is-error .c-form__input,
+.c-form__field.is-error .c-form__textarea {
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input.placeholder,
+.c-form__field.is-invalid .c-form__textarea.placeholder, .c-form__field.is-error .c-form__input.placeholder,
+.c-form__field.is-error .c-form__textarea.placeholder {
+  color: #cc0000;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input:-moz-placeholder,
+.c-form__field.is-invalid .c-form__textarea:-moz-placeholder, .c-form__field.is-error .c-form__input:-moz-placeholder,
+.c-form__field.is-error .c-form__textarea:-moz-placeholder {
+  color: #cc0000;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input::-moz-placeholder,
+.c-form__field.is-invalid .c-form__textarea::-moz-placeholder, .c-form__field.is-error .c-form__input::-moz-placeholder,
+.c-form__field.is-error .c-form__textarea::-moz-placeholder {
+  color: #cc0000;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input:-ms-input-placeholder,
+.c-form__field.is-invalid .c-form__textarea:-ms-input-placeholder, .c-form__field.is-error .c-form__input:-ms-input-placeholder,
+.c-form__field.is-error .c-form__textarea:-ms-input-placeholder {
+  color: #cc0000;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-invalid .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-invalid .c-form__textarea::-webkit-input-placeholder, .c-form__field.is-error .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-error .c-form__textarea::-webkit-input-placeholder {
+  color: #cc0000;
+}
+
+/* line 188, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__select-wrapper,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-invalid .c-form__select-wrapper .c-form__select-icon i, .c-form__field.is-error .c-form__select-wrapper,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-error .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+/* line 196, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-icon i, .c-form__field.is-error .c-form__radio-icon i {
+  border-color: #cc0000;
+}
+
+/* line 199, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-icon i:before, .c-form__field.is-error .c-form__radio-icon i:before {
+  background-color: #cc0000;
+}
+
+/* line 204, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__radio-text, .c-form__field.is-error .c-form__radio-text {
+  color: #cc0000;
+}
+
+/* line 210, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-icon i, .c-form__field.is-error .c-form__checkbox-icon i {
+  border-color: #cc0000;
+}
+
+/* line 213, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-icon i:before, .c-form__field.is-error .c-form__checkbox-icon i:before {
+  border-color: #cc0000;
+}
+
+/* line 218, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__checkbox-text, .c-form__field.is-error .c-form__checkbox-text {
+  color: #cc0000;
+}
+
+/* line 223, src/scss/_macros/_form.scss */
+.c-form__field.is-invalid .c-form__notify li, .c-form__field.is-error .c-form__notify li {
+  color: #cc0000;
+}
+
+/* line 229, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__label {
+  color: #ff8800;
+}
+
+/* line 232, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__input,
+.c-form__field.is-warning .c-form__textarea {
+  border-color: #ff8800;
+  color: #ff8800;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input.placeholder,
+.c-form__field.is-warning .c-form__textarea.placeholder {
+  color: #ff8800;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input:-moz-placeholder,
+.c-form__field.is-warning .c-form__textarea:-moz-placeholder {
+  color: #ff8800;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input::-moz-placeholder,
+.c-form__field.is-warning .c-form__textarea::-moz-placeholder {
+  color: #ff8800;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input:-ms-input-placeholder,
+.c-form__field.is-warning .c-form__textarea:-ms-input-placeholder {
+  color: #ff8800;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-warning .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-warning .c-form__textarea::-webkit-input-placeholder {
+  color: #ff8800;
+}
+
+/* line 240, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__select-wrapper,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-warning .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #ff8800;
+  color: #ff8800;
+}
+
+/* line 248, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-icon i {
+  border-color: #ff8800;
+}
+
+/* line 251, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-icon i:before {
+  background-color: #ff8800;
+}
+
+/* line 256, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__radio-text {
+  color: #ff8800;
+}
+
+/* line 262, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-icon i {
+  border-color: #ff8800;
+}
+
+/* line 265, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-icon i:before {
+  border-color: #ff8800;
+}
+
+/* line 270, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__checkbox-text {
+  color: #ff8800;
+}
+
+/* line 275, src/scss/_macros/_form.scss */
+.c-form__field.is-warning .c-form__notify li {
+  color: #ff8800;
+}
+
+/* line 281, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__label {
+  color: #33b5e5;
+}
+
+/* line 284, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__input,
+.c-form__field.is-info .c-form__textarea {
+  border-color: #33b5e5;
+  color: #33b5e5;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input.placeholder,
+.c-form__field.is-info .c-form__textarea.placeholder {
+  color: #33b5e5;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input:-moz-placeholder,
+.c-form__field.is-info .c-form__textarea:-moz-placeholder {
+  color: #33b5e5;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input::-moz-placeholder,
+.c-form__field.is-info .c-form__textarea::-moz-placeholder {
+  color: #33b5e5;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input:-ms-input-placeholder,
+.c-form__field.is-info .c-form__textarea:-ms-input-placeholder {
+  color: #33b5e5;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__field.is-info .c-form__input::-webkit-input-placeholder,
+.c-form__field.is-info .c-form__textarea::-webkit-input-placeholder {
+  color: #33b5e5;
+}
+
+/* line 292, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__select-wrapper,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-value,
+.c-form__field.is-info .c-form__select-wrapper .c-form__select-icon i {
+  border-color: #33b5e5;
+  color: #33b5e5;
+}
+
+/* line 300, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-icon i {
+  border-color: #33b5e5;
+}
+
+/* line 303, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-icon i:before {
+  background-color: #33b5e5;
+}
+
+/* line 308, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__radio-text {
+  color: #33b5e5;
+}
+
+/* line 314, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-icon i {
+  border-color: #33b5e5;
+}
+
+/* line 317, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-icon i:before {
+  border-color: #33b5e5;
+}
+
+/* line 322, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__checkbox-text {
+  color: #33b5e5;
+}
+
+/* line 327, src/scss/_macros/_form.scss */
+.c-form__field.is-info .c-form__notify li {
+  color: #33b5e5;
+}
+
+/* line 341, src/scss/_macros/_form.scss */
+.c-form__field--checkbox .c-form__label, .c-form__field--radio .c-form__label {
+  cursor: default;
+}
+
+/* line 347, src/scss/_macros/_form.scss */
+.c-form__label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 361, src/scss/_macros/_form.scss */
+.c-form__input-wrapper, .c-form__select-wrapper, .c-form__textarea-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 367, src/scss/_macros/_form.scss */
+.c-form__input, .c-form__select, .c-form__textarea {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.c-form__input.placeholder, .c-form__select.placeholder, .c-form__textarea.placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.c-form__input:-moz-placeholder, .c-form__select:-moz-placeholder, .c-form__textarea:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.c-form__input::-moz-placeholder, .c-form__select::-moz-placeholder, .c-form__textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.c-form__input:-ms-input-placeholder, .c-form__select:-ms-input-placeholder, .c-form__textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.c-form__input::-webkit-input-placeholder, .c-form__select::-webkit-input-placeholder, .c-form__textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 384, src/scss/_macros/_form.scss */
+.c-form__input {
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 393, src/scss/_macros/_form.scss */
+.c-form__input-wrapper {
+  height: 50px;
+}
+
+/* line 398, src/scss/_macros/_form.scss */
+.c-form__select {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 405, src/scss/_macros/_form.scss */
+.c-form__select-wrapper {
+  height: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid gray;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 413, src/scss/_macros/_form.scss */
+.c-form__select-value {
+  z-index: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 50px;
+  width: -webkit-calc(100% - 50px);
+  width: calc(100% - 50px);
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 430, src/scss/_macros/_form.scss */
+.is-choose .c-form__select-value {
+  color: #000;
+}
+
+/* line 435, src/scss/_macros/_form.scss */
+.c-form__select-icon {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+}
+
+/* line 446, src/scss/_macros/_form.scss */
+.c-form__select-icon i {
+  padding: 3px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 453, src/scss/_macros/_form.scss */
+.is-focus .c-form__select-icon i {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 461, src/scss/_macros/_form.scss */
+.c-form__selectric {
+  opacity: 0;
+}
+
+/* line 464, src/scss/_macros/_form.scss */
+.c-form__selectric-wrapper {
+  position: relative;
+}
+
+/* line 469, src/scss/_macros/_form.scss */
+.c-form__textarea {
+  resize: none;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 479, src/scss/_macros/_form.scss */
+.c-form__textarea-wrapper {
+  height: 150px;
+}
+
+/* line 484, src/scss/_macros/_form.scss */
+.c-form__radio, .c-form__checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 493, src/scss/_macros/_form.scss */
+.c-form__radio-wrapper, .c-form__checkbox-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 498, src/scss/_macros/_form.scss */
+.c-form__radio-content, .c-form__checkbox-content {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 505, src/scss/_macros/_form.scss */
+.c-form__radio-icon i, .c-form__checkbox-icon i {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 517, src/scss/_macros/_form.scss */
+.c-form__radio:checked + label .c-form__radio-icon i {
+  border-color: black;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 521, src/scss/_macros/_form.scss */
+.c-form__radio:checked + label .c-form__radio-icon i:before {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  background-color: black;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 531, src/scss/_macros/_form.scss */
+.c-form__radio-wrapper {
+  height: 50px;
+}
+
+/* line 535, src/scss/_macros/_form.scss */
+.c-form__radio-icon {
+  width: 30px;
+}
+
+/* line 538, src/scss/_macros/_form.scss */
+.c-form__radio-icon i {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 545, src/scss/_macros/_form.scss */
+.c-form__radio-icon i:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: transparent;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 557, src/scss/_macros/_form.scss */
+.c-form__radio-text {
+  max-width: -webkit-calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* line 568, src/scss/_macros/_form.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i {
+  border-color: black;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 572, src/scss/_macros/_form.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 581, src/scss/_macros/_form.scss */
+.c-form__checkbox-wrapper {
+  height: 50px;
+}
+
+/* line 585, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon {
+  width: 30px;
+}
+
+/* line 588, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon i {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 595, src/scss/_macros/_form.scss */
+.c-form__checkbox-icon i:before {
+  content: '';
+  opacity: 0;
+  position: relative;
+  top: -2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 610, src/scss/_macros/_form.scss */
+.c-form__checkbox-text {
+  max-width: -webkit-calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 618, src/scss/_macros/_form.scss */
+.c-form__notify {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  padding-top: 5px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: c-fadeIn;
+          animation-name: c-fadeIn;
+}
+
+/* line 631, src/scss/_macros/_form.scss */
+.c-form__notify ul li {
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 640, src/scss/_macros/_form.scss */
+.c-form #radio-error,
+.c-form #checkbox-error,
+.c-form #select-error {
+  display: none !important;
+}
+
+@-webkit-keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
   background-color: #fff;
@@ -508,7 +1337,63 @@ picture {
   padding-bottom: 80px;
 }
 
-/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 190, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 {
+  display: none;
+  padding-top: 154px;
+}
+
+/* line 195, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 .e-started__title {
+  padding-bottom: 30px;
+}
+
+/* line 199, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 .e-started__description {
+  max-width: 870px;
+}
+
+/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 .e-started__description-0 {
+  padding-bottom: 30px;
+}
+
+/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 .e-started__description-1 {
+  padding-bottom: 90px;
+}
+
+/* line 212, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-6 {
+  display: none;
+  padding-top: 100px;
+}
+
+/* line 217, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-6 .e-started__title {
+  padding-bottom: 30px;
+}
+
+/* line 222, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-6 .c-form__checkbox-wrapper {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 227, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-6 .c-form__checkbox-content {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 230, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-6 .c-form__checkbox-content > div {
+  padding-top: 5px;
+}
+
+/* line 240, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__title {
   color: #000;
   font-weight: bold;
@@ -516,7 +1401,7 @@ picture {
   text-align: center;
 }
 
-/* line 204, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 250, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__subtitle {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
@@ -527,7 +1412,7 @@ picture {
   opacity: 0.5;
 }
 
-/* line 217, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 263, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description {
   width: 100%;
   max-width: 748px;
@@ -540,12 +1425,12 @@ picture {
   font-family: 'SF Pro Text', sans-serif;
 }
 
-/* line 228, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 274, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description--opacity {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 236, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 282, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__question {
   width: 100%;
   margin-left: auto;
@@ -558,7 +1443,7 @@ picture {
   color: #0A0A10;
 }
 
-/* line 251, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 297, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -585,29 +1470,29 @@ picture {
           border-radius: 10px;
 }
 
-/* line 262, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 308, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no {
   background-color: #E3E5EB;
 }
 
-/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 311, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no span,
 .e-started__answer--no .icon-font {
   color: #333C52;
 }
 
-/* line 271, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 317, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes {
   background: rgba(14, 150, 52, 0.3);
 }
 
-/* line 274, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 320, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes span,
 .e-started__answer--yes .icon-font {
   color: #0E9634;
 }
 
-/* line 280, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 326, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -623,7 +1508,7 @@ picture {
           justify-content: center;
 }
 
-/* line 286, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 332, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer span {
   padding-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -633,9 +1518,138 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 296, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 342, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-font {
   font-size: 32px;
+}
+
+/* line 349, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 470px;
+  height: 200px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  color: #fff;
+}
+
+/* line 358, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account > div:nth-of-type(1) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 96px);
+  max-width: calc(100% - 96px);
+}
+
+/* line 362, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account > div:nth-of-type(1) span {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* line 367, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 96px;
+}
+
+/* line 372, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account > div:nth-of-type(2) span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 381, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account > div:nth-of-type(2) span .icon-font {
+  position: relative;
+  left: -2px;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* line 391, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account--open {
+  padding: 40px;
+  margin-right: 20px;
+  background-color: #153355;
+}
+
+/* line 397, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account--initiate {
+  padding: 40px 40px 40px 30px;
+  margin-left: 20px;
+  background-color: #1E263A;
+}
+
+/* line 403, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 409, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__btn {
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  margin-top: 10px;
+  background: #F30830;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 26px;
+  font-size: 16px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
