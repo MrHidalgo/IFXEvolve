@@ -1,4 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Rajdhani:400,500,600,700");
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-check:before, .icon-chevron-left:before, .icon-chevron-right:before, .icon-close:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-check:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-chevron-left:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-chevron-right:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-close:before {
+  content: "";
+}
+
+@font-face {
+  font-family: "SFUIText";
+  src: url("../fonts/SFUIText-Regular.woff2") format("woff2"), url("../fonts/SFUIText-Regular.woff") format("woff"), url("../fonts/SFUIText-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
 html,
 body {
@@ -28,7 +74,7 @@ body {
   line-height: 1.42857143;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Rajdhani', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -228,6 +274,368 @@ picture {
   .c-grid {
     max-width: 1170px;
   }
+}
+
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+}
+
+/* line 3, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started {
+  background-color: #fff;
+}
+
+/* line 6, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__wrapper {
+  position: relative;
+  min-height: 900px;
+}
+
+/* line 12, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started-back {
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+/* line 19, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started-back.is-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 24, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started-back:hover .icon-chevron-left,
+.e-started-back:hover span {
+  color: #0a0a10;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 31, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started-back .icon-chevron-left {
+  color: rgba(10, 10, 16, 0.5);
+  font-size: 13px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 37, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started-back span {
+  padding-left: 10px;
+  color: rgba(10, 10, 16, 0.5);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'SF Pro Text', sans-serif;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 51, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row {
+  padding-bottom: 50px;
+}
+
+/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-0 {
+  padding-top: 154px;
+}
+
+/* line 58, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-0 .e-started__subtitle {
+  padding-bottom: 4px;
+}
+
+/* line 62, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-0 .e-started__title {
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* line 67, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-0 .e-started__question {
+  max-width: 748px;
+  padding-bottom: 80px;
+}
+
+/* line 74, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 {
+  display: none;
+  padding-top: 160px;
+}
+
+/* line 79, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 .e-started__title {
+  padding-bottom: 20px;
+}
+
+/* line 83, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 .e-started__description {
+  padding-bottom: 111px;
+}
+
+/* line 87, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 .e-started__question {
+  padding-bottom: 30px;
+}
+
+/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 .e-started__answer-wrapper {
+  padding-bottom: 42px;
+}
+
+/* line 97, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-2 {
+  display: none;
+  padding-top: 140px;
+}
+
+/* line 102, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-2 .e-started__subtitle {
+  padding-bottom: 23px;
+}
+
+/* line 106, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-2 .e-started__title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* line 111, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-2 .e-started__description {
+  padding-bottom: 40px;
+}
+
+/* line 116, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-2 .e-started__answer span {
+  text-transform: capitalize;
+}
+
+/* line 123, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-3 {
+  display: none;
+  padding-top: 140px;
+}
+
+/* line 128, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-3 .e-started__subtitle {
+  padding-bottom: 23px;
+}
+
+/* line 132, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-3 .e-started__title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* line 137, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-3 .e-started__description {
+  padding-bottom: 50px;
+}
+
+/* line 141, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-3 .e-started__question {
+  padding-bottom: 30px;
+}
+
+/* line 147, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 {
+  display: none;
+  padding-top: 100px;
+}
+
+/* line 153, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__title-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 13px;
+  color: #0E9634;
+  font-family: SF Pro Text, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 165, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__title-0 .icon-font {
+  font-size: 20px;
+}
+
+/* line 169, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__title-0 span {
+  padding-left: 10px;
+}
+
+/* line 173, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__title-1, .e-started__row-4 .e-started__title-2 {
+  padding-bottom: 20px;
+}
+
+/* line 180, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__description-0 {
+  padding-bottom: 60px;
+}
+
+/* line 183, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__description-1 {
+  padding-bottom: 80px;
+}
+
+/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__title {
+  color: #000;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* line 204, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__subtitle {
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0A0A10;
+  opacity: 0.5;
+}
+
+/* line 217, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__description {
+  width: 100%;
+  max-width: 748px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  line-height: 1.66667;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'SF Pro Text', sans-serif;
+}
+
+/* line 228, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__description--opacity {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 236, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__question {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'SF Pro Text', sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 22px;
+  text-align: center;
+  color: #0A0A10;
+}
+
+/* line 251, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 188px;
+  height: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+/* line 262, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--no {
+  background-color: #E3E5EB;
+}
+
+/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--no span,
+.e-started__answer--no .icon-font {
+  color: #333C52;
+}
+
+/* line 271, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--yes {
+  background: rgba(14, 150, 52, 0.3);
+}
+
+/* line 274, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--yes span,
+.e-started__answer--yes .icon-font {
+  color: #0E9634;
+}
+
+/* line 280, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 286, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer span {
+  padding-top: 10px;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 296, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer .icon-font {
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
