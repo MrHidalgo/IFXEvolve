@@ -5,7 +5,10 @@
 
   &__wrapper {
     position: relative;
-    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
   }
 
   // btn back
@@ -49,10 +52,10 @@
 
   // row
   &__row {
+    padding-top: 50px;
     padding-bottom: 50px;
 
     &-0 {
-      padding-top: 154px;
 
       .e-started {
         &__subtitle {
@@ -73,7 +76,6 @@
 
     &-1 {
       display: none;
-      padding-top: 160px;
 
       .e-started {
         &__title {
@@ -81,7 +83,9 @@
         }
 
         &__description {
-          padding-bottom: 111px;
+          &--opacity {
+            padding-bottom: 0;
+          }
         }
 
         &__question {
@@ -96,7 +100,6 @@
 
     &-2 {
       display: none;
-      padding-top: 140px;
 
       .e-started {
         &__subtitle {
@@ -122,7 +125,6 @@
 
     &-3 {
       display: none;
-      padding-top: 140px;
 
       .e-started {
         &__subtitle {
@@ -146,7 +148,6 @@
 
     &-4 {
       display: none;
-      padding-top: 100px;
 
       .e-started {
         &__title {
@@ -183,13 +184,15 @@
           &-1 {
             padding-bottom: 80px;
           }
+          &-2 {
+            padding-bottom: 0;
+          }
         }
       }
     }
 
     &-5 {
       display: none;
-      padding-top: 154px;
 
       .e-started {
         &__title {
@@ -211,7 +214,6 @@
 
     &-6 {
       display: none;
-      padding-top: 100px;
 
       .e-started {
         &__title {

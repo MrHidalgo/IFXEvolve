@@ -1114,6 +1114,133 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/_main.scss */
+.e-main {
+  position: relative;
+  background-color: #050716;
+}
+
+/* line 7, src/scss/_components/_main.scss */
+.e-main:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-bg-main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+/* line 21, src/scss/_components/_main.scss */
+.e-main__wrapper {
+  z-index: 2;
+  position: relative;
+  padding-top: 95px;
+  min-height: 100vh;
+}
+
+/* line 29, src/scss/_components/_main.scss */
+.e-main__row-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+}
+
+/* line 35, src/scss/_components/_main.scss */
+.e-main__row-1 {
+  padding-top: 110px;
+}
+
+/* line 39, src/scss/_components/_main.scss */
+.e-main__row-left, .e-main__row-right {
+  width: 50%;
+}
+
+/* line 46, src/scss/_components/_main.scss */
+.e-main__row-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 53, src/scss/_components/_main.scss */
+.e-main__link {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 16px;
+  color: #F9FCFF;
+}
+
+/* line 60, src/scss/_components/_main.scss */
+.e-main__link--open {
+  margin-left: 50px;
+}
+
+/* line 65, src/scss/_components/_main.scss */
+.e-main__subtitle {
+  padding-bottom: 14px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 74, src/scss/_components/_main.scss */
+.e-main__title {
+  padding-bottom: 30px;
+  font-weight: bold;
+  line-height: 90px;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 83, src/scss/_components/_main.scss */
+.e-main__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 228px;
+  height: 50px;
+  background: #F30830;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #F9FCFF;
+}
+
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
   background-color: #fff;
@@ -1122,10 +1249,22 @@ picture {
 /* line 6, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__wrapper {
   position: relative;
-  min-height: 900px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 
-/* line 12, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 15, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back {
   display: none;
   -webkit-box-align: center;
@@ -1137,7 +1276,7 @@ picture {
   left: 0;
 }
 
-/* line 19, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 22, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back.is-active {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1145,7 +1284,7 @@ picture {
   display: flex;
 }
 
-/* line 24, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 27, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back:hover .icon-chevron-left,
 .e-started-back:hover span {
   color: #0a0a10;
@@ -1154,7 +1293,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 34, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back .icon-chevron-left {
   color: rgba(10, 10, 16, 0.5);
   font-size: 13px;
@@ -1163,7 +1302,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 37, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 40, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back span {
   padding-left: 10px;
   color: rgba(10, 10, 16, 0.5);
@@ -1176,120 +1315,112 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 51, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
-.e-started__row-0 {
-  padding-top: 154px;
-}
-
-/* line 58, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 61, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__subtitle {
   padding-bottom: 4px;
 }
 
-/* line 62, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 65, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__title {
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
-/* line 67, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 70, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__question {
   max-width: 748px;
   padding-bottom: 80px;
 }
 
-/* line 74, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 77, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 {
   display: none;
-  padding-top: 160px;
 }
 
-/* line 79, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 81, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__title {
   padding-bottom: 20px;
 }
 
-/* line 83, src/scss/_components/_getting-started/_getting-started.scss */
-.e-started__row-1 .e-started__description {
-  padding-bottom: 111px;
+/* line 86, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-1 .e-started__description--opacity {
+  padding-bottom: 0;
 }
 
-/* line 87, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 95, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__answer-wrapper {
   padding-bottom: 42px;
 }
 
-/* line 97, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 101, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 {
   display: none;
-  padding-top: 140px;
 }
 
-/* line 102, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 105, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 106, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 109, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 111, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 114, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__description {
   padding-bottom: 40px;
 }
 
-/* line 116, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 119, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__answer span {
   text-transform: capitalize;
 }
 
-/* line 123, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 126, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 {
   display: none;
-  padding-top: 140px;
 }
 
-/* line 128, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 130, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 132, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 134, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 137, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 139, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__description {
   padding-bottom: 50px;
 }
 
-/* line 141, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 143, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 147, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 149, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 {
   display: none;
-  padding-top: 100px;
 }
 
-/* line 153, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 154, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1312,75 +1443,78 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 165, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 166, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 .icon-font {
   font-size: 20px;
 }
 
-/* line 169, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 170, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 span {
   padding-left: 10px;
 }
 
-/* line 173, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 174, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-1, .e-started__row-4 .e-started__title-2 {
   padding-bottom: 20px;
 }
 
-/* line 180, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 181, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-0 {
   padding-bottom: 60px;
 }
 
-/* line 183, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 184, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-1 {
   padding-bottom: 80px;
 }
 
-/* line 190, src/scss/_components/_getting-started/_getting-started.scss */
-.e-started__row-5 {
-  display: none;
-  padding-top: 154px;
+/* line 187, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-4 .e-started__description-2 {
+  padding-bottom: 0;
 }
 
-/* line 195, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__row-5 {
+  display: none;
+}
+
+/* line 198, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 199, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description {
   max-width: 870px;
 }
 
-/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-0 {
   padding-bottom: 30px;
 }
 
-/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 208, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-1 {
   padding-bottom: 90px;
 }
 
-/* line 212, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 215, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 {
   display: none;
-  padding-top: 100px;
 }
 
-/* line 217, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 219, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 222, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 224, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-wrapper {
   height: auto;
   min-height: 50px;
 }
 
-/* line 227, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 229, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1388,12 +1522,12 @@ picture {
           align-items: flex-start;
 }
 
-/* line 230, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 232, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content > div {
   padding-top: 5px;
 }
 
-/* line 240, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 242, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__title {
   color: #000;
   font-weight: bold;
@@ -1401,7 +1535,7 @@ picture {
   text-align: center;
 }
 
-/* line 250, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 252, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__subtitle {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
@@ -1412,7 +1546,7 @@ picture {
   opacity: 0.5;
 }
 
-/* line 263, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description {
   width: 100%;
   max-width: 748px;
@@ -1425,12 +1559,12 @@ picture {
   font-family: 'SF Pro Text', sans-serif;
 }
 
-/* line 274, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 276, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description--opacity {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 282, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 284, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__question {
   width: 100%;
   margin-left: auto;
@@ -1443,7 +1577,7 @@ picture {
   color: #0A0A10;
 }
 
-/* line 297, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 299, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1470,29 +1604,29 @@ picture {
           border-radius: 10px;
 }
 
-/* line 308, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 310, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no {
   background-color: #E3E5EB;
 }
 
-/* line 311, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 313, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no span,
 .e-started__answer--no .icon-font {
   color: #333C52;
 }
 
-/* line 317, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 319, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes {
   background: rgba(14, 150, 52, 0.3);
 }
 
-/* line 320, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 322, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes span,
 .e-started__answer--yes .icon-font {
   color: #0E9634;
 }
 
-/* line 326, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 328, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1508,7 +1642,7 @@ picture {
           justify-content: center;
 }
 
-/* line 332, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 334, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer span {
   padding-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -1518,12 +1652,12 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 342, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 344, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-font {
   font-size: 32px;
 }
 
-/* line 349, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 351, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1540,20 +1674,20 @@ picture {
   color: #fff;
 }
 
-/* line 358, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 360, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) {
   width: 100%;
   max-width: -webkit-calc(100% - 96px);
   max-width: calc(100% - 96px);
 }
 
-/* line 362, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 364, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) span {
   font-weight: bold;
   font-size: 28px;
 }
 
-/* line 367, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 369, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1566,7 +1700,7 @@ picture {
   width: 96px;
 }
 
-/* line 372, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 374, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1587,7 +1721,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 381, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 383, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span .icon-font {
   position: relative;
   left: -2px;
@@ -1595,21 +1729,21 @@ picture {
   font-size: 18px;
 }
 
-/* line 391, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 393, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open {
   padding: 40px;
   margin-right: 20px;
   background-color: #153355;
 }
 
-/* line 397, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 399, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate {
   padding: 40px 40px 40px 30px;
   margin-left: 20px;
   background-color: #1E263A;
 }
 
-/* line 403, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 405, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1621,7 +1755,7 @@ picture {
           justify-content: center;
 }
 
-/* line 409, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 411, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__btn {
   outline: none;
   cursor: pointer;
@@ -1650,6 +1784,43 @@ picture {
   line-height: 26px;
   font-size: 16px;
   text-align: center;
+}
+
+/* line 3, src/scss/_components/_how.scss */
+.e-how {
+  position: relative;
+  background-color: #EDEFF2;
+}
+
+/* line 7, src/scss/_components/_how.scss */
+.e-how__wrapper {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+/* line 13, src/scss/_components/_how.scss */
+.e-how__title {
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* line 22, src/scss/_components/_how.scss */
+.e-how__desc {
+  width: 100%;
+  max-width: 748px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 73px;
+  font-family: SF Pro Text, sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: #0A0A10;
 }
 
 /* line 3, src/scss/_components/_faqs.scss */

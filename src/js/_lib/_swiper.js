@@ -7,15 +7,16 @@
  */
 const initSwiper = () => {
 
-  const mySwiper = new Swiper('.swiper-container', {
+  const mySwiper = new Swiper('.swiper-container--how', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
-    direction: 'horizontal', // 'horizontal' or 'vertical'
-    loop: true,
+    direction: 'vertical', // 'horizontal' or 'vertical'
+    loop: false,
     watchOverflow: true,
     normalizeSlideIndex: true,
-    grabCursor: true,
+    grabCursor: false,
+    mousewheel: true,
     freeMode: false,
     effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
     // autoplay: {
@@ -36,24 +37,24 @@ const initSwiper = () => {
     // allowPageScroll: "auto ",
 
     slidesPerView: 1,
-    spaceBetween: 0,
-    breakpoints: {
-      // when window width is <= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10
-      },
-      // when window width is <= 480px
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      // when window width is <= 640px
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      }
-    },
+    spaceBetween: 55,
+    // breakpoints: {
+    //   // when window width is <= 320px
+    //   320: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10
+    //   },
+    //   // when window width is <= 480px
+    //   480: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20
+    //   },
+    //   // when window width is <= 640px
+    //   640: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30
+    //   }
+    // },
 
     // If we need pagination
     pagination: {
