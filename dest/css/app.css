@@ -1241,6 +1241,86 @@ picture {
   color: #F9FCFF;
 }
 
+/* line 3, src/scss/_components/_improve.scss */
+.e-improve {
+  padding-top: 97px;
+  padding-bottom: 30px;
+  background-color: #050717;
+}
+
+/* line 8, src/scss/_components/_improve.scss */
+.e-improve__wrapper {
+  min-height: 100vh;
+}
+
+/* line 13, src/scss/_components/_improve.scss */
+.e-improve__row-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 17, src/scss/_components/_improve.scss */
+.e-improve__row-1 {
+  position: relative;
+  top: -75px;
+  padding-left: 38px;
+}
+
+/* line 23, src/scss/_components/_improve.scss */
+.e-improve__row-cover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 27, src/scss/_components/_improve.scss */
+.e-improve__row-left, .e-improve__row-right {
+  width: 50%;
+}
+
+/* line 31, src/scss/_components/_improve.scss */
+.e-improve__row-left img, .e-improve__row-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 39, src/scss/_components/_improve.scss */
+.e-improve__title {
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: normal;
+  color: #FFFFFF;
+}
+
+/* line 47, src/scss/_components/_improve.scss */
+.e-improve__text {
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 54, src/scss/_components/_improve.scss */
+.e-improve__text-0 {
+  max-width: 470px;
+}
+
+/* line 58, src/scss/_components/_improve.scss */
+.e-improve__text-1 {
+  max-width: 529px;
+}
+
+/* line 62, src/scss/_components/_improve.scss */
+.e-improve__text span {
+  color: #F30830;
+}
+
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
   background-color: #fff;

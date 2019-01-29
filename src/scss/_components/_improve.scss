@@ -1,0 +1,68 @@
+// SECTION improve :: START
+
+.e-improve {
+  padding-top: 97px;
+  padding-bottom: 30px;
+  background-color: #050717;
+
+  &__wrapper {
+    min-height: 100vh;
+  }
+
+  &__row {
+    &-0 {
+      display: flex;
+    }
+
+    &-1 {
+      position: relative;
+      top: -75px;
+      padding-left: 38px;
+    }
+
+    &-cover {
+      display: flex;
+    }
+
+    &-left,
+    &-right {
+      width: 50%;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: normal;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    &-0 {
+      max-width: 470px;
+    }
+
+    &-1 {
+      max-width: 529px;
+    }
+
+    span {
+      color: #F30830;
+    }
+  }
+}
+
+// SECTION improve :: END
