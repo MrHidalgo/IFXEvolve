@@ -1428,6 +1428,200 @@ picture {
   color: #FFFFFF;
 }
 
+/* line 3, src/scss/_components/_assessment.scss */
+.e-assessment {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 106px;
+  background-color: #06050f;
+}
+
+/* line 9, src/scss/_components/_assessment.scss */
+.e-assessment__bg {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+/* line 18, src/scss/_components/_assessment.scss */
+.e-assessment__bg-left {
+  width: 38%;
+  height: 100%;
+}
+
+/* line 23, src/scss/_components/_assessment.scss */
+.e-assessment__bg-right {
+  width: 62%;
+  height: 100%;
+}
+
+/* line 27, src/scss/_components/_assessment.scss */
+.e-assessment__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 35, src/scss/_components/_assessment.scss */
+.e-assessment__wrapper {
+  z-index: 2;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* line 41, src/scss/_components/_assessment.scss */
+.e-assessment__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 45, src/scss/_components/_assessment.scss */
+.e-assessment__row-0 .e-assessment__row-left {
+  width: 466px;
+}
+
+/* line 49, src/scss/_components/_assessment.scss */
+.e-assessment__row-0 .e-assessment__row-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 466px);
+  max-width: calc(100% - 466px);
+}
+
+/* line 55, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 58, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-left {
+  position: relative;
+  left: -70px;
+  width: 581px;
+}
+
+/* line 63, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 70, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  max-width: -webkit-calc((100% - 581px) + 70px);
+  max-width: calc((100% - 581px) + 70px);
+  margin-left: -70px;
+}
+
+/* line 77, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div {
+  width: 100%;
+  max-width: 50%;
+  padding-bottom: 60px;
+}
+
+/* line 82, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(even) {
+  padding-left: 40px;
+}
+
+/* line 85, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(odd) {
+  padding-right: 40px;
+}
+
+/* line 89, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(3), .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(4) {
+  padding-bottom: 0;
+}
+
+/* line 94, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div p {
+  padding-bottom: 12px;
+  font-family: SF Pro Text, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* line 104, src/scss/_components/_assessment.scss */
+.e-assessment__row-1 .e-assessment__row-right > div span {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 117, src/scss/_components/_assessment.scss */
+.e-assessment__title {
+  padding-bottom: 84px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+/* line 126, src/scss/_components/_assessment.scss */
+.e-assessment__desc {
+  padding-left: 36px;
+  border-left: 4px solid #F30830;
+}
+
+/* line 130, src/scss/_components/_assessment.scss */
+.e-assessment__desc-text {
+  font-family: Open Sans, sans-serif;
+  line-height: 40px;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+/* line 138, src/scss/_components/_assessment.scss */
+.e-assessment__text {
+  width: 100%;
+  max-width: 356px;
+  margin-left: 40px;
+  font-family: Open Sans, sans-serif;
+  line-height: 32px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* line 147, src/scss/_components/_assessment.scss */
+.e-assessment__text-0 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+/* line 152, src/scss/_components/_assessment.scss */
+.e-assessment__text-1 {
+  padding-bottom: 141px;
+}
+
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
   background-color: #fff;
