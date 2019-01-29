@@ -1,0 +1,94 @@
+// SECTION about :: START
+
+.e-about {
+  position: relative;
+  padding-top: 132px;
+  padding-bottom: 128px;
+  background-color: #050716;
+
+  &__bg {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-left,
+    &-right {
+      width: 50%;
+      height: 100%;
+      padding-top: 132px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &__row {
+    display: flex;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 60px;
+    color: #FFFFFF;
+
+    &-0 {}
+    &-1 {}
+  }
+
+  &__text {
+    font-family: Open Sans, sans-serif;
+    line-height: 36px;
+    font-size: 18px;
+    color: #FFFFFF;
+
+    &-0 {
+      padding-bottom: 40px;
+    }
+    &-1 {
+      padding-bottom: 70px;
+    }
+  }
+
+  &__subtitle {
+    padding-bottom: 130px;
+    font-family: Open Sans, sans-serif;
+    line-height: 46px;
+    font-size: 32px;
+    color: #FFFFFF;
+  }
+
+  &__desc {
+    padding-left: 36px;
+    border-left: 4px solid #F30830;
+
+    &-title {
+      padding-bottom: 10px;
+      font-family: Open Sans, sans-serif;
+      font-weight: bold;
+      line-height: normal;
+      font-size: 40px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+// SECTION about :: END

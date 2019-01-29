@@ -1244,7 +1244,7 @@ picture {
 /* line 3, src/scss/_components/_improve.scss */
 .e-improve {
   padding-top: 97px;
-  padding-bottom: 30px;
+  padding-bottom: 132px;
   background-color: #050717;
 }
 
@@ -1319,6 +1319,113 @@ picture {
 /* line 62, src/scss/_components/_improve.scss */
 .e-improve__text span {
   color: #F30830;
+}
+
+/* line 3, src/scss/_components/_about.scss */
+.e-about {
+  position: relative;
+  padding-top: 132px;
+  padding-bottom: 128px;
+  background-color: #050716;
+}
+
+/* line 9, src/scss/_components/_about.scss */
+.e-about__bg {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, src/scss/_components/_about.scss */
+.e-about__bg-left, .e-about__bg-right {
+  width: 50%;
+  height: 100%;
+  padding-top: 132px;
+}
+
+/* line 23, src/scss/_components/_about.scss */
+.e-about__bg-left img, .e-about__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 31, src/scss/_components/_about.scss */
+.e-about__wrapper {
+  z-index: 2;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* line 37, src/scss/_components/_about.scss */
+.e-about__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 40, src/scss/_components/_about.scss */
+.e-about__row-left, .e-about__row-right {
+  width: 50%;
+}
+
+/* line 46, src/scss/_components/_about.scss */
+.e-about__title {
+  padding-bottom: 40px;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+
+/* line 57, src/scss/_components/_about.scss */
+.e-about__text {
+  font-family: Open Sans, sans-serif;
+  line-height: 36px;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 63, src/scss/_components/_about.scss */
+.e-about__text-0 {
+  padding-bottom: 40px;
+}
+
+/* line 66, src/scss/_components/_about.scss */
+.e-about__text-1 {
+  padding-bottom: 70px;
+}
+
+/* line 71, src/scss/_components/_about.scss */
+.e-about__subtitle {
+  padding-bottom: 130px;
+  font-family: Open Sans, sans-serif;
+  line-height: 46px;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+/* line 79, src/scss/_components/_about.scss */
+.e-about__desc {
+  padding-left: 36px;
+  border-left: 4px solid #F30830;
+}
+
+/* line 83, src/scss/_components/_about.scss */
+.e-about__desc-title {
+  padding-bottom: 10px;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 40px;
+  color: #FFFFFF;
 }
 
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
