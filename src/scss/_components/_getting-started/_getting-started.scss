@@ -378,6 +378,7 @@
     height: 200px;
     border-radius: 8px;
     color: $c-white;
+    @include transition(background-color);
 
     > div {
       &:nth-of-type(1) {
@@ -424,6 +425,11 @@
       @include adaptive(575) {
         padding: 20px;
       }
+
+      &:hover {
+        background-color: rgba(#153355, 0.95);
+        @include transition(background-color);
+      }
     }
 
     &--initiate {
@@ -435,6 +441,11 @@
       }
       @include adaptive(575) {
         padding: 20px;
+      }
+
+      &:hover {
+        background-color: rgba(#1E263A, 0.95);
+        @include transition(background-color);
       }
     }
 

@@ -39,11 +39,11 @@ $(document).ready((ev) => {
 	    const _btnBack = $('.e-started-back');
 
       const nextScreen = (name, id) => {
-        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
+        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').fadeIn(425);
       };
 
       const prevScreen = (name, id) => {
-        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
+        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').fadeIn(425);
       };
 
       if(_elemID === 0) {
@@ -76,7 +76,7 @@ $(document).ready((ev) => {
         backToMain();
       } else {
         $('.e-started__row--' + _name + '[e-started-screen="' + (_id) + '"]').hide();
-        $('.e-started__row--' + _name + '[e-started-screen="' + (_id - 1) + '"]').show();
+        $('.e-started__row--' + _name + '[e-started-screen="' + (_id - 1) + '"]').fadeIn(425);
         _id--;
       }
     });

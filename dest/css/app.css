@@ -2232,23 +2232,26 @@ picture {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 383, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 384, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) {
   width: 100%;
   max-width: -webkit-calc(100% - 96px);
   max-width: calc(100% - 96px);
 }
 
-/* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 388, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) span {
   font-weight: bold;
   font-size: 22px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 388, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account > div:nth-of-type(1) span {
     font-size: -webkit-calc(22px + 6 * (100vw - 320px) / 447);
     font-size: calc(22px + 6 * (100vw - 320px) / 447);
@@ -2256,13 +2259,13 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 388, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account > div:nth-of-type(1) span {
     font-size: 28px;
   }
 }
 
-/* line 392, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 393, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2275,7 +2278,7 @@ picture {
   width: 96px;
 }
 
-/* line 397, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 398, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2296,7 +2299,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 406, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 407, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span .icon-font {
   position: relative;
   left: -2px;
@@ -2304,7 +2307,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 416, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 417, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open {
   padding: 40px;
   margin-right: 20px;
@@ -2312,7 +2315,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 416, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 417, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--open {
     margin-right: 0;
     margin-bottom: 20px;
@@ -2320,13 +2323,21 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 416, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 417, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--open {
     padding: 20px;
   }
 }
 
 /* line 429, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account--open:hover {
+  background-color: rgba(21, 51, 85, 0.95);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 435, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate {
   padding: 40px 40px 40px 30px;
   margin-left: 20px;
@@ -2334,20 +2345,28 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 429, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 435, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--initiate {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 429, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 435, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--initiate {
     padding: 20px;
   }
 }
 
-/* line 441, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 446, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__account--initiate:hover {
+  background-color: rgba(30, 38, 58, 0.95);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 452, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2360,7 +2379,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 441, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 452, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2368,7 +2387,7 @@ picture {
   }
 }
 
-/* line 450, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 461, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__btn {
   outline: none;
   cursor: pointer;

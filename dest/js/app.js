@@ -82,11 +82,11 @@ $(document).ready(function (ev) {
       var _btnBack = $('.e-started-back');
 
       var nextScreen = function nextScreen(name, id) {
-        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
+        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').fadeIn(425);
       };
 
       var prevScreen = function prevScreen(name, id) {
-        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
+        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').fadeIn(425);
       };
 
       if (_elemID === 0) {
@@ -119,7 +119,7 @@ $(document).ready(function (ev) {
         backToMain();
       } else {
         $('.e-started__row--' + _name + '[e-started-screen="' + _id + '"]').hide();
-        $('.e-started__row--' + _name + '[e-started-screen="' + (_id - 1) + '"]').show();
+        $('.e-started__row--' + _name + '[e-started-screen="' + (_id - 1) + '"]').fadeIn(425);
         _id--;
       }
     });
