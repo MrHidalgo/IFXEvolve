@@ -1117,10 +1117,11 @@ picture {
 /* line 3, src/scss/_components/_main.scss */
 .e-main {
   position: relative;
+  min-height: 900px;
   background-color: #050716;
 }
 
-/* line 7, src/scss/_components/_main.scss */
+/* line 8, src/scss/_components/_main.scss */
 .e-main:before {
   content: '';
   z-index: 0;
@@ -1136,7 +1137,7 @@ picture {
           background-size: cover;
 }
 
-/* line 21, src/scss/_components/_main.scss */
+/* line 22, src/scss/_components/_main.scss */
 .e-main__wrapper {
   z-index: 2;
   position: relative;
@@ -1144,7 +1145,7 @@ picture {
   min-height: 100vh;
 }
 
-/* line 29, src/scss/_components/_main.scss */
+/* line 30, src/scss/_components/_main.scss */
 .e-main__row-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1157,17 +1158,17 @@ picture {
   min-height: 50px;
 }
 
-/* line 35, src/scss/_components/_main.scss */
+/* line 36, src/scss/_components/_main.scss */
 .e-main__row-1 {
   padding-top: 110px;
 }
 
-/* line 39, src/scss/_components/_main.scss */
+/* line 40, src/scss/_components/_main.scss */
 .e-main__row-left, .e-main__row-right {
   width: 50%;
 }
 
-/* line 46, src/scss/_components/_main.scss */
+/* line 47, src/scss/_components/_main.scss */
 .e-main__row-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1183,7 +1184,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 53, src/scss/_components/_main.scss */
+/* line 54, src/scss/_components/_main.scss */
 .e-main__link {
   font-family: Open Sans, sans-serif;
   font-weight: 600;
@@ -1192,12 +1193,12 @@ picture {
   color: #F9FCFF;
 }
 
-/* line 60, src/scss/_components/_main.scss */
+/* line 61, src/scss/_components/_main.scss */
 .e-main__link--open {
   margin-left: 50px;
 }
 
-/* line 65, src/scss/_components/_main.scss */
+/* line 66, src/scss/_components/_main.scss */
 .e-main__subtitle {
   padding-bottom: 14px;
   font-weight: bold;
@@ -1206,7 +1207,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 74, src/scss/_components/_main.scss */
+/* line 75, src/scss/_components/_main.scss */
 .e-main__title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -1216,7 +1217,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 83, src/scss/_components/_main.scss */
+/* line 84, src/scss/_components/_main.scss */
 .e-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1624,10 +1625,11 @@ picture {
 
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
+  min-height: 900px;
   background-color: #fff;
 }
 
-/* line 6, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 7, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__wrapper {
   position: relative;
   display: -webkit-box;
@@ -1645,7 +1647,7 @@ picture {
   min-height: 100vh;
 }
 
-/* line 15, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 16, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back {
   display: none;
   -webkit-box-align: center;
@@ -1657,7 +1659,7 @@ picture {
   left: 0;
 }
 
-/* line 22, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 23, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back.is-active {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1665,7 +1667,7 @@ picture {
   display: flex;
 }
 
-/* line 27, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 28, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back:hover .icon-chevron-left,
 .e-started-back:hover span {
   color: #0a0a10;
@@ -1674,7 +1676,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 34, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 35, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back .icon-chevron-left {
   color: rgba(10, 10, 16, 0.5);
   font-size: 13px;
@@ -1683,7 +1685,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 40, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 41, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back span {
   padding-left: 10px;
   color: rgba(10, 10, 16, 0.5);
@@ -1696,112 +1698,112 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 55, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 61, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 62, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__subtitle {
   padding-bottom: 4px;
 }
 
-/* line 65, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 66, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__title {
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
-/* line 70, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 71, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__question {
   max-width: 748px;
   padding-bottom: 80px;
 }
 
-/* line 77, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 78, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 {
   display: none;
 }
 
-/* line 81, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 82, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__title {
   padding-bottom: 20px;
 }
 
-/* line 86, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 87, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__description--opacity {
   padding-bottom: 0;
 }
 
-/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 92, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 95, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 96, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__answer-wrapper {
   padding-bottom: 42px;
 }
 
-/* line 101, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 102, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 {
   display: none;
 }
 
-/* line 105, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 106, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 109, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 110, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 114, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 115, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__description {
   padding-bottom: 40px;
 }
 
-/* line 119, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 120, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__answer span {
   text-transform: capitalize;
 }
 
-/* line 126, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 127, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 {
   display: none;
 }
 
-/* line 130, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 131, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 134, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 135, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 139, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 140, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__description {
   padding-bottom: 50px;
 }
 
-/* line 143, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 144, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 149, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 150, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 {
   display: none;
 }
 
-/* line 154, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 155, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1824,78 +1826,78 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 166, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 167, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 .icon-font {
   font-size: 20px;
 }
 
-/* line 170, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 171, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 span {
   padding-left: 10px;
 }
 
-/* line 174, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 175, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-1, .e-started__row-4 .e-started__title-2 {
   padding-bottom: 20px;
 }
 
-/* line 181, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 182, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-0 {
   padding-bottom: 60px;
 }
 
-/* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 185, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-1 {
   padding-bottom: 80px;
 }
 
-/* line 187, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 188, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-2 {
   padding-bottom: 0;
 }
 
-/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 195, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 {
   display: none;
 }
 
-/* line 198, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 199, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 203, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description {
   max-width: 870px;
 }
 
-/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 206, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-0 {
   padding-bottom: 30px;
 }
 
-/* line 208, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 209, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-1 {
   padding-bottom: 90px;
 }
 
-/* line 215, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 216, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 {
   display: none;
 }
 
-/* line 219, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 220, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 224, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 225, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-wrapper {
   height: auto;
   min-height: 50px;
 }
 
-/* line 229, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 230, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1903,12 +1905,12 @@ picture {
           align-items: flex-start;
 }
 
-/* line 232, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 233, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content > div {
   padding-top: 5px;
 }
 
-/* line 242, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 243, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__title {
   color: #000;
   font-weight: bold;
@@ -1916,7 +1918,7 @@ picture {
   text-align: center;
 }
 
-/* line 252, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 253, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__subtitle {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
@@ -1927,7 +1929,7 @@ picture {
   opacity: 0.5;
 }
 
-/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 266, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description {
   width: 100%;
   max-width: 748px;
@@ -1940,12 +1942,12 @@ picture {
   font-family: 'SF Pro Text', sans-serif;
 }
 
-/* line 276, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 277, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description--opacity {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 284, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 285, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__question {
   width: 100%;
   margin-left: auto;
@@ -1958,7 +1960,7 @@ picture {
   color: #0A0A10;
 }
 
-/* line 299, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 300, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1985,29 +1987,29 @@ picture {
           border-radius: 10px;
 }
 
-/* line 310, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 311, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no {
   background-color: #E3E5EB;
 }
 
-/* line 313, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 314, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no span,
 .e-started__answer--no .icon-font {
   color: #333C52;
 }
 
-/* line 319, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 320, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes {
   background: rgba(14, 150, 52, 0.3);
 }
 
-/* line 322, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 323, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes span,
 .e-started__answer--yes .icon-font {
   color: #0E9634;
 }
 
-/* line 328, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 329, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2023,7 +2025,7 @@ picture {
           justify-content: center;
 }
 
-/* line 334, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 335, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer span {
   padding-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -2033,12 +2035,12 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 344, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 345, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-font {
   font-size: 32px;
 }
 
-/* line 351, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 352, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2055,20 +2057,20 @@ picture {
   color: #fff;
 }
 
-/* line 360, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 361, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) {
   width: 100%;
   max-width: -webkit-calc(100% - 96px);
   max-width: calc(100% - 96px);
 }
 
-/* line 364, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 365, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) span {
   font-weight: bold;
   font-size: 28px;
 }
 
-/* line 369, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 370, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2081,7 +2083,7 @@ picture {
   width: 96px;
 }
 
-/* line 374, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 375, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2102,7 +2104,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 383, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 384, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span .icon-font {
   position: relative;
   left: -2px;
@@ -2110,21 +2112,21 @@ picture {
   font-size: 18px;
 }
 
-/* line 393, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 394, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open {
   padding: 40px;
   margin-right: 20px;
   background-color: #153355;
 }
 
-/* line 399, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 400, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate {
   padding: 40px 40px 40px 30px;
   margin-left: 20px;
   background-color: #1E263A;
 }
 
-/* line 405, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 406, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2136,7 +2138,7 @@ picture {
           justify-content: center;
 }
 
-/* line 411, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 412, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__btn {
   outline: none;
   cursor: pointer;
@@ -2170,17 +2172,18 @@ picture {
 /* line 3, src/scss/_components/_how.scss */
 .e-how {
   position: relative;
+  min-height: 900px;
   background-color: #EDEFF2;
 }
 
-/* line 7, src/scss/_components/_how.scss */
+/* line 8, src/scss/_components/_how.scss */
 .e-how__wrapper {
   min-height: 100vh;
   padding-top: 120px;
   padding-bottom: 60px;
 }
 
-/* line 13, src/scss/_components/_how.scss */
+/* line 14, src/scss/_components/_how.scss */
 .e-how__title {
   padding-bottom: 20px;
   text-align: center;
@@ -2190,7 +2193,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 22, src/scss/_components/_how.scss */
+/* line 23, src/scss/_components/_how.scss */
 .e-how__desc {
   width: 100%;
   max-width: 748px;
