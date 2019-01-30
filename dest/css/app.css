@@ -1117,11 +1117,12 @@ picture {
 /* line 3, src/scss/_components/_main.scss */
 .e-main {
   position: relative;
-  min-height: 900px;
+  padding-top: 95px;
+  padding-bottom: 50px;
   background-color: #050716;
 }
 
-/* line 8, src/scss/_components/_main.scss */
+/* line 9, src/scss/_components/_main.scss */
 .e-main:before {
   content: '';
   z-index: 0;
@@ -1137,11 +1138,10 @@ picture {
           background-size: cover;
 }
 
-/* line 22, src/scss/_components/_main.scss */
+/* line 23, src/scss/_components/_main.scss */
 .e-main__wrapper {
   z-index: 2;
   position: relative;
-  padding-top: 95px;
   min-height: 100vh;
 }
 
@@ -1160,7 +1160,22 @@ picture {
 
 /* line 36, src/scss/_components/_main.scss */
 .e-main__row-1 {
-  padding-top: 110px;
+  padding-top: 70px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 36, src/scss/_components/_main.scss */
+  .e-main__row-1 {
+    padding-top: -webkit-calc(70px + 40 * (100vw - 320px) / 447);
+    padding-top: calc(70px + 40 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 36, src/scss/_components/_main.scss */
+  .e-main__row-1 {
+    padding-top: 110px;
+  }
 }
 
 /* line 40, src/scss/_components/_main.scss */
@@ -1193,31 +1208,68 @@ picture {
   color: #F9FCFF;
 }
 
-/* line 61, src/scss/_components/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/_main.scss */
+  .e-main__link {
+    display: none;
+  }
+}
+
+/* line 64, src/scss/_components/_main.scss */
 .e-main__link--open {
   margin-left: 50px;
 }
 
-/* line 66, src/scss/_components/_main.scss */
+/* line 69, src/scss/_components/_main.scss */
 .e-main__subtitle {
   padding-bottom: 14px;
   font-weight: bold;
-  font-size: 40px;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-size: 26px;
 }
 
-/* line 75, src/scss/_components/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 69, src/scss/_components/_main.scss */
+  .e-main__subtitle {
+    font-size: -webkit-calc(26px + 14 * (100vw - 320px) / 1119);
+    font-size: calc(26px + 14 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 69, src/scss/_components/_main.scss */
+  .e-main__subtitle {
+    font-size: 40px;
+  }
+}
+
+/* line 77, src/scss/_components/_main.scss */
 .e-main__title {
   padding-bottom: 30px;
   font-weight: bold;
-  line-height: 90px;
-  font-size: 70px;
+  line-height: 1.28571;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-size: 44px;
 }
 
-/* line 84, src/scss/_components/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 77, src/scss/_components/_main.scss */
+  .e-main__title {
+    font-size: -webkit-calc(44px + 26 * (100vw - 320px) / 1119);
+    font-size: calc(44px + 26 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 77, src/scss/_components/_main.scss */
+  .e-main__title {
+    font-size: 70px;
+  }
+}
+
+/* line 86, src/scss/_components/_main.scss */
 .e-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
