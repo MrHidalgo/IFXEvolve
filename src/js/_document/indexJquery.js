@@ -29,7 +29,7 @@ $(document).ready((ev) => {
     };
 
 	  $('[started-btn-js]').on('click', (ev) => {
-	    const _elem = $(ev.currentTarget),
+	    let _elem = $(ev.currentTarget),
         _elemName = _elem.data('name'),
         _elemID = _elem.data('id');
 
@@ -42,8 +42,8 @@ $(document).ready((ev) => {
         $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
       };
 
-      const prevScreen = (id) => {
-        $('.e-started__row[e-started-screen="' + id + '"]').show();
+      const prevScreen = (name, id) => {
+        $('.e-started__row--' + name + '[e-started-screen="' + id + '"]').show();
       };
 
       if(_elemID === 0) {
@@ -52,13 +52,19 @@ $(document).ready((ev) => {
 
       if(_elemID === 1) {
         _btnBack.addClass('is-active');
+
         $('.e-started__row[e-started-screen="0"]').hide();
+
         nextScreen(_elemName, _elemID);
       } else if (_elemName === 'back') {
+        _elemName = _elem.data('subname');
+
         $('.e-started__row[e-started-screen="' + (_elemID + 1) + '"]').hide();
-        prevScreen(_elemID);
+
+        prevScreen(_elemName, _elemID);
       } else {
         $('.e-started__row[e-started-screen="' + (_elemID - 1) + '"]').hide();
+
         nextScreen(_elemName, _elemID);
       }
 

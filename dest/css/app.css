@@ -1625,11 +1625,10 @@ picture {
 
 /* line 3, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started {
-  min-height: 900px;
   background-color: #fff;
 }
 
-/* line 7, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 6, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__wrapper {
   position: relative;
   display: -webkit-box;
@@ -1647,7 +1646,7 @@ picture {
   min-height: 100vh;
 }
 
-/* line 16, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 15, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back {
   display: none;
   -webkit-box-align: center;
@@ -1655,11 +1654,11 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 0;
 }
 
-/* line 23, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 22, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back.is-active {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1667,7 +1666,7 @@ picture {
   display: flex;
 }
 
-/* line 28, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 27, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back:hover .icon-chevron-left,
 .e-started-back:hover span {
   color: #0a0a10;
@@ -1676,7 +1675,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 35, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 34, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back .icon-chevron-left {
   color: rgba(10, 10, 16, 0.5);
   font-size: 13px;
@@ -1685,7 +1684,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 41, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 40, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back span {
   padding-left: 10px;
   color: rgba(10, 10, 16, 0.5);
@@ -1698,112 +1697,142 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 55, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
-/* line 62, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 61, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__subtitle {
   padding-bottom: 4px;
 }
 
-/* line 66, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 65, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__title {
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
-/* line 71, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 70, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__question {
   max-width: 748px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
-/* line 78, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 70, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-0 .e-started__question {
+    padding-bottom: -webkit-calc(40px + 40 * (100vw - 320px) / 255);
+    padding-bottom: calc(40px + 40 * (100vw - 320px) / 255);
+  }
+}
+
+@media screen and (min-width: 575px) {
+  /* line 70, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-0 .e-started__question {
+    padding-bottom: 80px;
+  }
+}
+
+/* line 77, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 {
   display: none;
 }
 
-/* line 82, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 81, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__title {
   padding-bottom: 20px;
 }
 
-/* line 87, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 86, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__description--opacity {
   padding-bottom: 0;
 }
 
-/* line 92, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 96, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 95, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__answer-wrapper {
   padding-bottom: 42px;
 }
 
-/* line 102, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 101, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 {
   display: none;
 }
 
-/* line 106, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 105, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 110, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 109, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 115, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 114, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__description {
   padding-bottom: 40px;
 }
 
-/* line 120, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 119, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__answer span {
   text-transform: capitalize;
 }
 
-/* line 127, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 126, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 {
   display: none;
 }
 
-/* line 131, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 130, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 135, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 134, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 140, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 139, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__description {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
-/* line 144, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 139, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-3 .e-started__description {
+    padding-bottom: -webkit-calc(40px + 10 * (100vw - 320px) / 255);
+    padding-bottom: calc(40px + 10 * (100vw - 320px) / 255);
+  }
+}
+
+@media screen and (min-width: 575px) {
+  /* line 139, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-3 .e-started__description {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 143, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 150, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 149, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 {
   display: none;
 }
 
-/* line 155, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 154, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1826,78 +1855,123 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 167, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 166, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 .icon-font {
   font-size: 20px;
 }
 
-/* line 171, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 170, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 span {
   padding-left: 10px;
 }
 
-/* line 175, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 174, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-1, .e-started__row-4 .e-started__title-2 {
   padding-bottom: 20px;
 }
 
-/* line 182, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 181, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-0 {
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
-/* line 185, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 181, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-4 .e-started__description-0 {
+    padding-bottom: -webkit-calc(40px + 20 * (100vw - 320px) / 255);
+    padding-bottom: calc(40px + 20 * (100vw - 320px) / 255);
+  }
+}
+
+@media screen and (min-width: 575px) {
+  /* line 181, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-4 .e-started__description-0 {
+    padding-bottom: 60px;
+  }
+}
+
+/* line 184, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-1 {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
-/* line 188, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-4 .e-started__description-1 {
+    padding-bottom: -webkit-calc(40px + 40 * (100vw - 320px) / 255);
+    padding-bottom: calc(40px + 40 * (100vw - 320px) / 255);
+  }
+}
+
+@media screen and (min-width: 575px) {
+  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-4 .e-started__description-1 {
+    padding-bottom: 80px;
+  }
+}
+
+/* line 187, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-2 {
   padding-bottom: 0;
 }
 
-/* line 195, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 {
   display: none;
 }
 
-/* line 199, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 198, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 203, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description {
   max-width: 870px;
 }
 
-/* line 206, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-0 {
   padding-bottom: 30px;
 }
 
-/* line 209, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 208, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-1 {
-  padding-bottom: 90px;
+  padding-bottom: 45px;
 }
 
-/* line 216, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 208, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-5 .e-started__description-1 {
+    padding-bottom: -webkit-calc(45px + 45 * (100vw - 320px) / 255);
+    padding-bottom: calc(45px + 45 * (100vw - 320px) / 255);
+  }
+}
+
+@media screen and (min-width: 575px) {
+  /* line 208, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__row-5 .e-started__description-1 {
+    padding-bottom: 90px;
+  }
+}
+
+/* line 215, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 {
   display: none;
 }
 
-/* line 220, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 219, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 225, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 224, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-wrapper {
   height: auto;
   min-height: 50px;
 }
 
-/* line 230, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 229, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -1905,31 +1979,61 @@ picture {
           align-items: flex-start;
 }
 
-/* line 233, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 232, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content > div {
   padding-top: 5px;
 }
 
-/* line 243, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 242, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__title {
   color: #000;
   font-weight: bold;
-  font-size: 60px;
   text-align: center;
+  font-size: 38px;
 }
 
-/* line 253, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 242, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__title {
+    font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
+    font-size: calc(38px + 22 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 242, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__title {
+    font-size: 60px;
+  }
+}
+
+/* line 252, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__subtitle {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
-  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   color: #0A0A10;
   opacity: 0.5;
+  font-size: 12px;
 }
 
-/* line 266, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 252, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__subtitle {
+    font-size: -webkit-calc(12px + 2 * (100vw - 320px) / 447);
+    font-size: calc(12px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 252, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__subtitle {
+    font-size: 14px;
+  }
+}
+
+/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description {
   width: 100%;
   max-width: 748px;
@@ -1937,17 +2041,32 @@ picture {
   margin-right: auto;
   padding-bottom: 40px;
   line-height: 1.66667;
-  font-size: 18px;
   text-align: center;
   font-family: 'SF Pro Text', sans-serif;
+  font-size: 16px;
 }
 
-/* line 277, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 265, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__description {
+    font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
+    font-size: calc(16px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 265, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__description {
+    font-size: 18px;
+  }
+}
+
+/* line 276, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description--opacity {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 285, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 284, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__question {
   width: 100%;
   margin-left: auto;
@@ -1955,12 +2074,27 @@ picture {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
   line-height: 30px;
-  font-size: 22px;
   text-align: center;
   color: #0A0A10;
+  font-size: 20px;
 }
 
-/* line 300, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 284, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__question {
+    font-size: -webkit-calc(20px + 2 * (100vw - 320px) / 447);
+    font-size: calc(20px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 284, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__question {
+    font-size: 22px;
+  }
+}
+
+/* line 299, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1985,6 +2119,9 @@ picture {
   margin-right: 15px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* line 311, src/scss/_components/_getting-started/_getting-started.scss */
@@ -1992,24 +2129,47 @@ picture {
   background-color: #E3E5EB;
 }
 
-/* line 314, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (max-width: 575px) {
+  /* line 311, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__answer--no {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 317, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--no:hover {
+  background-color: rgba(227, 229, 235, 0.75);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 322, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no span,
 .e-started__answer--no .icon-font {
   color: #333C52;
 }
 
-/* line 320, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 328, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes {
-  background: rgba(14, 150, 52, 0.3);
+  background-color: rgba(14, 150, 52, 0.3);
 }
 
-/* line 323, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 331, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer--yes:hover {
+  background-color: rgba(14, 150, 52, 0.2);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 336, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes span,
 .e-started__answer--yes .icon-font {
   color: #0E9634;
 }
 
-/* line 329, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 342, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2025,7 +2185,16 @@ picture {
           justify-content: center;
 }
 
-/* line 335, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (max-width: 575px) {
+  /* line 342, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__answer-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 351, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer span {
   padding-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -2035,12 +2204,19 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 345, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 361, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-font {
   font-size: 32px;
 }
 
-/* line 352, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 364, src/scss/_components/_getting-started/_getting-started.scss */
+.e-started__answer .icon-chevron-right {
+  position: relative;
+  left: -2px;
+  font-size: 30px;
+}
+
+/* line 373, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2050,27 +2226,43 @@ picture {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 470px;
+  width: 100%;
+  max-width: 470px;
   height: 200px;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   color: #fff;
 }
 
-/* line 361, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 383, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) {
   width: 100%;
   max-width: -webkit-calc(100% - 96px);
   max-width: calc(100% - 96px);
 }
 
-/* line 365, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 387, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) span {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 22px;
 }
 
-/* line 370, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (min-width: 320px) {
+  /* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account > div:nth-of-type(1) span {
+    font-size: -webkit-calc(22px + 6 * (100vw - 320px) / 447);
+    font-size: calc(22px + 6 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account > div:nth-of-type(1) span {
+    font-size: 28px;
+  }
+}
+
+/* line 392, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2083,7 +2275,7 @@ picture {
   width: 96px;
 }
 
-/* line 375, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 397, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2104,7 +2296,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 384, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 406, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span .icon-font {
   position: relative;
   left: -2px;
@@ -2112,21 +2304,50 @@ picture {
   font-size: 18px;
 }
 
-/* line 394, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 416, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open {
   padding: 40px;
   margin-right: 20px;
   background-color: #153355;
 }
 
-/* line 400, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (max-width: 991px) {
+  /* line 416, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account--open {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 416, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account--open {
+    padding: 20px;
+  }
+}
+
+/* line 429, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate {
   padding: 40px 40px 40px 30px;
   margin-left: 20px;
   background-color: #1E263A;
 }
 
-/* line 406, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (max-width: 991px) {
+  /* line 429, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account--initiate {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 429, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account--initiate {
+    padding: 20px;
+  }
+}
+
+/* line 441, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2138,7 +2359,16 @@ picture {
           justify-content: center;
 }
 
-/* line 412, src/scss/_components/_getting-started/_getting-started.scss */
+@media screen and (max-width: 991px) {
+  /* line 441, src/scss/_components/_getting-started/_getting-started.scss */
+  .e-started__account-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 450, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__btn {
   outline: none;
   cursor: pointer;
@@ -2264,12 +2494,12 @@ picture {
 @media screen and (min-width: 320px) {
   /* line 15, src/scss/_components/_faqs.scss */
   .e-faqs__title {
-    font-size: -webkit-calc(60px + 40 * (100vw - 320px) / 1120);
-    font-size: calc(60px + 40 * (100vw - 320px) / 1120);
+    font-size: -webkit-calc(60px + 40 * (100vw - 320px) / 1119);
+    font-size: calc(60px + 40 * (100vw - 320px) / 1119);
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1439px) {
   /* line 15, src/scss/_components/_faqs.scss */
   .e-faqs__title {
     font-size: 100px;

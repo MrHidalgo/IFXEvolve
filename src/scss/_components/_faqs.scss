@@ -17,7 +17,7 @@
     font-weight: bold;
     line-height: 128px;
     color: #000000;
-    @include fluid(font-size, 320px, 1440px, 60px, 100px);
+    @include fluid(font-size, 320px, 1439px, 60px, 100px);
   }
 
   &__block {

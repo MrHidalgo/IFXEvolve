@@ -1,7 +1,6 @@
 // getting started :: START
 
 .e-started {
-  min-height: 900px;
   background-color: $c-white;
 
   &__wrapper {
@@ -17,7 +16,7 @@
     display: none;
     align-items: center;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: 0;
 
     &.is-active {
@@ -53,7 +52,7 @@
 
   // row
   &__row {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
 
     &-0 {
@@ -70,7 +69,7 @@
 
         &__question {
           max-width: 748px;
-          padding-bottom: 80px;
+          @include fluid(padding-bottom, 320px, 575px, 40px, 80px);
         }
       }
     }
@@ -138,7 +137,7 @@
         }
 
         &__description {
-          padding-bottom: 50px;
+          @include fluid(padding-bottom, 320px, 575px, 40px, 50px);
         }
 
         &__question {
@@ -180,10 +179,10 @@
 
         &__description {
           &-0 {
-            padding-bottom: 60px;
+            @include fluid(padding-bottom, 320px, 575px, 40px, 60px);
           }
           &-1 {
-            padding-bottom: 80px;
+            @include fluid(padding-bottom, 320px, 575px, 40px, 80px);
           }
           &-2 {
             padding-bottom: 0;
@@ -207,7 +206,7 @@
             padding-bottom: 30px;
           }
           &-1 {
-            padding-bottom: 90px;
+            @include fluid(padding-bottom, 320px, 575px, 45px, 90px);
           }
         }
       }
@@ -243,8 +242,8 @@
   &__title {
     color: $c-black;
     font-weight: bold;
-    font-size: 60px;
     text-align: center;
+    @include fluid(font-size, 320px, 1439px, 38px, 60px);
   }
   // title :: end
 
@@ -253,11 +252,11 @@
   &__subtitle {
     font-family: 'SF Pro Text', sans-serif;
     font-weight: bold;
-    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     color: #0A0A10;
     opacity: 0.5;
+    @include fluid(font-size, 320px, 767px, 12px, 14px);
   }
   // subtitle :: end
 
@@ -270,9 +269,9 @@
     margin-right: auto;
     padding-bottom: 40px;
     line-height: line-height-convert(30, 18);
-    font-size: 18px;
     text-align: center;
     font-family: 'SF Pro Text', sans-serif;
+    @include fluid(font-size, 320px, 767px, 16px, 18px);
 
     &--opacity {
       color: rgba($c-black, 0.5);
@@ -289,9 +288,9 @@
     font-family: 'SF Pro Text', sans-serif;
     font-weight: bold;
     line-height: 30px;
-    font-size: 22px;
     text-align: center;
     color: #0A0A10;
+    @include fluid(font-size, 320px, 767px, 20px, 22px);
   }
   // question :: end
 
@@ -307,9 +306,18 @@
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 10px;
+    @include transition(background-color);
 
     &--no {
       background-color: #E3E5EB;
+      @include adaptive(575) {
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        background-color: rgba(#E3E5EB, 0.75);
+        @include transition(background-color);
+      }
 
       span,
       .icon-font {
@@ -318,7 +326,12 @@
     }
 
     &--yes {
-      background: rgba(#0E9634, 0.3);
+      background-color: rgba(#0E9634, 0.3);
+
+      &:hover {
+        background-color: rgba(#0E9634, 0.2);
+        @include transition(background-color);
+      }
 
       span,
       .icon-font {
@@ -330,6 +343,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
     }
 
     span {
@@ -345,6 +361,11 @@
       &-font {
         font-size: 32px;
       }
+      &-chevron-right {
+        position: relative;
+        left: -2px;
+        font-size: 30px;
+      }
     }
   }
   // answer :: end
@@ -352,7 +373,8 @@
   &__account {
     display: flex;
     align-items: center;
-    width: 470px;
+    width: 100%;
+    max-width: 470px;
     height: 200px;
     border-radius: 8px;
     color: $c-white;
@@ -364,7 +386,7 @@
 
         span {
           font-weight: bold;
-          font-size: 28px;
+          @include fluid(font-size, 320px, 767px, 22px, 28px);
         }
       }
       &:nth-of-type(2) {
@@ -395,17 +417,33 @@
       padding: 40px;
       margin-right: 20px;
       background-color: #153355;
+      @include adaptive(991) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      @include adaptive(575) {
+        padding: 20px;
+      }
     }
 
     &--initiate {
       padding: 40px 40px 40px 30px;
       margin-left: 20px;
       background-color: #1E263A;
+      @include adaptive(991) {
+        margin-left: 0;
+      }
+      @include adaptive(575) {
+        padding: 20px;
+      }
     }
 
     &-wrapper {
       display: flex;
       justify-content: center;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
   }
 
