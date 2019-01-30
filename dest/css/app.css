@@ -1133,7 +1133,7 @@ picture {
   height: 100%;
   background-image: url("../img/img-bg-main.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -1296,9 +1296,39 @@ picture {
 
 /* line 3, src/scss/_components/_improve.scss */
 .e-improve {
-  padding-top: 97px;
-  padding-bottom: 132px;
   background-color: #050717;
+  padding-top: 48px;
+  padding-bottom: 66px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_improve.scss */
+  .e-improve {
+    padding-top: -webkit-calc(48px + 49 * (100vw - 320px) / 447);
+    padding-top: calc(48px + 49 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 3, src/scss/_components/_improve.scss */
+  .e-improve {
+    padding-top: 97px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_improve.scss */
+  .e-improve {
+    padding-bottom: -webkit-calc(66px + 66 * (100vw - 320px) / 447);
+    padding-bottom: calc(66px + 66 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 3, src/scss/_components/_improve.scss */
+  .e-improve {
+    padding-bottom: 132px;
+  }
 }
 
 /* line 8, src/scss/_components/_improve.scss */
@@ -1314,14 +1344,42 @@ picture {
   display: flex;
 }
 
-/* line 17, src/scss/_components/_improve.scss */
+@media screen and (max-width: 575px) {
+  /* line 13, src/scss/_components/_improve.scss */
+  .e-improve__row-0 {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+/* line 21, src/scss/_components/_improve.scss */
 .e-improve__row-1 {
   position: relative;
   top: -75px;
   padding-left: 38px;
 }
 
-/* line 23, src/scss/_components/_improve.scss */
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/_improve.scss */
+  .e-improve__row-1 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 21, src/scss/_components/_improve.scss */
+  .e-improve__row-1 {
+    top: 0;
+  }
+}
+
+/* line 33, src/scss/_components/_improve.scss */
 .e-improve__row-cover {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1329,47 +1387,134 @@ picture {
   display: flex;
 }
 
-/* line 27, src/scss/_components/_improve.scss */
+@media screen and (max-width: 575px) {
+  /* line 33, src/scss/_components/_improve.scss */
+  .e-improve__row-cover {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 39, src/scss/_components/_improve.scss */
+.e-improve__row-cover .e-improve__row-left,
+.e-improve__row-cover .e-improve__row-right {
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 39, src/scss/_components/_improve.scss */
+  .e-improve__row-cover .e-improve__row-left,
+  .e-improve__row-cover .e-improve__row-right {
+    padding-right: 0;
+  }
+}
+
+/* line 48, src/scss/_components/_improve.scss */
 .e-improve__row-left, .e-improve__row-right {
   width: 50%;
 }
 
-/* line 31, src/scss/_components/_improve.scss */
+@media screen and (max-width: 575px) {
+  /* line 48, src/scss/_components/_improve.scss */
+  .e-improve__row-left, .e-improve__row-right {
+    width: 100%;
+  }
+}
+
+/* line 55, src/scss/_components/_improve.scss */
 .e-improve__row-left img, .e-improve__row-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 39, src/scss/_components/_improve.scss */
+/* line 63, src/scss/_components/_improve.scss */
 .e-improve__title {
   padding-bottom: 40px;
   font-weight: bold;
-  font-size: 60px;
   line-height: normal;
   color: #FFFFFF;
+  font-size: 38px;
 }
 
-/* line 47, src/scss/_components/_improve.scss */
+@media screen and (min-width: 320px) {
+  /* line 63, src/scss/_components/_improve.scss */
+  .e-improve__title {
+    font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
+    font-size: calc(38px + 22 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 63, src/scss/_components/_improve.scss */
+  .e-improve__title {
+    font-size: 60px;
+  }
+}
+
+/* line 71, src/scss/_components/_improve.scss */
 .e-improve__text {
   width: 100%;
   font-family: Open Sans, sans-serif;
   line-height: 30px;
-  font-size: 18px;
   color: #FFFFFF;
+  font-size: 16px;
 }
 
-/* line 54, src/scss/_components/_improve.scss */
+@media screen and (min-width: 320px) {
+  /* line 71, src/scss/_components/_improve.scss */
+  .e-improve__text {
+    font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
+    font-size: calc(16px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 71, src/scss/_components/_improve.scss */
+  .e-improve__text {
+    font-size: 18px;
+  }
+}
+
+/* line 78, src/scss/_components/_improve.scss */
 .e-improve__text-0 {
   max-width: 470px;
 }
 
-/* line 58, src/scss/_components/_improve.scss */
+@media screen and (max-width: 575px) {
+  /* line 78, src/scss/_components/_improve.scss */
+  .e-improve__text-0 {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 86, src/scss/_components/_improve.scss */
 .e-improve__text-1 {
   max-width: 529px;
 }
 
-/* line 62, src/scss/_components/_improve.scss */
+@media screen and (max-width: 575px) {
+  /* line 86, src/scss/_components/_improve.scss */
+  .e-improve__text-1 {
+    max-width: 100%;
+  }
+}
+
+/* line 93, src/scss/_components/_improve.scss */
+.e-improve__text-2 {
+  padding-bottom: 90px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 93, src/scss/_components/_improve.scss */
+  .e-improve__text-2 {
+    padding-bottom: 0;
+  }
+}
+
+/* line 100, src/scss/_components/_improve.scss */
 .e-improve__text span {
   color: #F30830;
 }

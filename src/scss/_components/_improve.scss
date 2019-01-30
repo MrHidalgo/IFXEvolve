@@ -1,9 +1,9 @@
 // SECTION improve :: START
 
 .e-improve {
-  padding-top: 97px;
-  padding-bottom: 132px;
   background-color: #050717;
+  @include fluid(padding-top, 320px, 767px, 48px, 97px);
+  @include fluid(padding-bottom, 320px, 767px, 66px, 132px);
 
   &__wrapper {
     min-height: 100vh;
@@ -12,21 +12,45 @@
   &__row {
     &-0 {
       display: flex;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
     }
 
     &-1 {
       position: relative;
       top: -75px;
       padding-left: 38px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
+      @include adaptive(575) {
+        top: 0;
+      }
     }
 
     &-cover {
       display: flex;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
+
+      .e-improve__row-left,
+      .e-improve__row-right {
+        padding-right: 15px;
+        @include adaptive(575) {
+          padding-right: 0;
+        }
+      }
     }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(575) {
+        width: 100%;
+      }
 
       img {
         display: block;
@@ -39,24 +63,38 @@
   &__title {
     padding-bottom: 40px;
     font-weight: bold;
-    font-size: 60px;
     line-height: normal;
     color: #FFFFFF;
+    @include fluid(font-size, 320px, 1439px, 38px, 60px);
   }
 
   &__text {
     width: 100%;
     font-family: Open Sans, sans-serif;
     line-height: 30px;
-    font-size: 18px;
     color: #FFFFFF;
+    @include fluid(font-size, 320px, 767px, 16px, 18px);
 
     &-0 {
       max-width: 470px;
+      @include adaptive(575) {
+        max-width: 100%;
+        padding-bottom: 30px;
+      }
     }
 
     &-1 {
       max-width: 529px;
+      @include adaptive(575) {
+        max-width: 100%;
+      }
+    }
+
+    &-2 {
+      padding-bottom: 90px;
+      @include adaptive(575) {
+        padding-bottom: 0;
+      }
     }
 
     span {
