@@ -40,6 +40,9 @@
     z-index: 2;
     position: relative;
     min-height: 100vh;
+    @include adaptive(767) {
+      min-height: auto;
+    }
   }
 
   &__row {
