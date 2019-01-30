@@ -1,9 +1,9 @@
 // SECTION faqs :: START
 
 .e-faqs {
-  padding-top: 100px;
-  padding-bottom: 89px;
   background-color: $c-white;
+  @include fluid(padding-top, 320px, 767px, 50px, 100px);
+  @include fluid(padding-bottom, 320px, 767px, 45px, 89px);
 
   &__wrapper {
     width: 100%;
@@ -16,8 +16,8 @@
     padding-bottom: 24px;
     font-weight: bold;
     line-height: 128px;
-    font-size: 100px;
     color: #000000;
+    @include fluid(font-size, 320px, 1440px, 60px, 100px);
   }
 
   &__block {
@@ -58,6 +58,15 @@
       padding: 5px 30px;
       background-color: #EDEFF2;
       @include transition(background-color);
+      @include adaptive(575) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      &:hover {
+        background-color: rgba(#EDEFF2, 0.65);
+        @include transition(background-color);
+      }
 
       > div {
         &:nth-of-type(1) {
@@ -69,7 +78,10 @@
         &:nth-of-type(2) {
           display: flex;
           justify-content: flex-end;
-          width: 78px;
+          width: 48px;
+          @include adaptive(575) {
+            width: 32px;
+          }
         }
       }
 
@@ -77,8 +89,8 @@
         font-family: SF Pro Text, sans-serif;
         font-weight: bold;
         line-height: 21px;
-        font-size: 16px;
         color: #333333;
+        @include fluid(font-size, 320px, 767px, 14px, 16px);
       }
 
       span {
@@ -116,13 +128,15 @@
     &-body {
       display: none;
       padding: 0 100px 40px 30px;
+      @include adaptive(575) {
+        padding: 10px 50px 20px 15px;
+      }
 
       p {
         font-family: SF Pro Text, sans-serif;
         line-height: 28px;
-        font-size: 18px;
-
         color: #333333;
+        @include fluid(font-size, 320px, 767px, 16px, 18px);
       }
     }
   }

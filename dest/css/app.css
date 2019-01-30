@@ -2206,9 +2206,39 @@ picture {
 
 /* line 3, src/scss/_components/_faqs.scss */
 .e-faqs {
-  padding-top: 100px;
-  padding-bottom: 89px;
   background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_faqs.scss */
+  .e-faqs {
+    padding-top: -webkit-calc(50px + 50 * (100vw - 320px) / 447);
+    padding-top: calc(50px + 50 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 3, src/scss/_components/_faqs.scss */
+  .e-faqs {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/_faqs.scss */
+  .e-faqs {
+    padding-bottom: -webkit-calc(45px + 44 * (100vw - 320px) / 447);
+    padding-bottom: calc(45px + 44 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 3, src/scss/_components/_faqs.scss */
+  .e-faqs {
+    padding-bottom: 89px;
+  }
 }
 
 /* line 8, src/scss/_components/_faqs.scss */
@@ -2224,8 +2254,23 @@ picture {
   padding-bottom: 24px;
   font-weight: bold;
   line-height: 128px;
-  font-size: 100px;
   color: #000000;
+  font-size: 60px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 15, src/scss/_components/_faqs.scss */
+  .e-faqs__title {
+    font-size: -webkit-calc(60px + 40 * (100vw - 320px) / 1120);
+    font-size: calc(60px + 40 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 15, src/scss/_components/_faqs.scss */
+  .e-faqs__title {
+    font-size: 100px;
+  }
 }
 
 /* line 23, src/scss/_components/_faqs.scss */
@@ -2299,7 +2344,23 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 63, src/scss/_components/_faqs.scss */
+@media screen and (max-width: 575px) {
+  /* line 54, src/scss/_components/_faqs.scss */
+  .e-faqs__block-head {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 66, src/scss/_components/_faqs.scss */
+.e-faqs__block-head:hover {
+  background-color: rgba(237, 239, 242, 0.65);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 72, src/scss/_components/_faqs.scss */
 .e-faqs__block-head > div:nth-of-type(1) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2309,7 +2370,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 69, src/scss/_components/_faqs.scss */
+/* line 78, src/scss/_components/_faqs.scss */
 .e-faqs__block-head > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2319,26 +2380,48 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 78px;
+  width: 48px;
 }
 
-/* line 76, src/scss/_components/_faqs.scss */
+@media screen and (max-width: 575px) {
+  /* line 78, src/scss/_components/_faqs.scss */
+  .e-faqs__block-head > div:nth-of-type(2) {
+    width: 32px;
+  }
+}
+
+/* line 88, src/scss/_components/_faqs.scss */
 .e-faqs__block-head p {
   font-family: SF Pro Text, sans-serif;
   font-weight: bold;
   line-height: 21px;
-  font-size: 16px;
   color: #333333;
+  font-size: 14px;
 }
 
-/* line 84, src/scss/_components/_faqs.scss */
+@media screen and (min-width: 320px) {
+  /* line 88, src/scss/_components/_faqs.scss */
+  .e-faqs__block-head p {
+    font-size: -webkit-calc(14px + 2 * (100vw - 320px) / 447);
+    font-size: calc(14px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 88, src/scss/_components/_faqs.scss */
+  .e-faqs__block-head p {
+    font-size: 16px;
+  }
+}
+
+/* line 96, src/scss/_components/_faqs.scss */
 .e-faqs__block-head span {
   position: relative;
   width: 18px;
   height: 18px;
 }
 
-/* line 89, src/scss/_components/_faqs.scss */
+/* line 101, src/scss/_components/_faqs.scss */
 .e-faqs__block-head span:before, .e-faqs__block-head span:after {
   content: '';
   position: absolute;
@@ -2347,7 +2430,7 @@ picture {
           border-radius: 1px;
 }
 
-/* line 97, src/scss/_components/_faqs.scss */
+/* line 109, src/scss/_components/_faqs.scss */
 .e-faqs__block-head span:before {
   top: 50%;
   left: 0;
@@ -2358,7 +2441,7 @@ picture {
   height: 2px;
 }
 
-/* line 105, src/scss/_components/_faqs.scss */
+/* line 117, src/scss/_components/_faqs.scss */
 .e-faqs__block-head span:after {
   top: 0;
   left: 50%;
@@ -2374,18 +2457,40 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 116, src/scss/_components/_faqs.scss */
+/* line 128, src/scss/_components/_faqs.scss */
 .e-faqs__block-body {
   display: none;
   padding: 0 100px 40px 30px;
 }
 
-/* line 120, src/scss/_components/_faqs.scss */
+@media screen and (max-width: 575px) {
+  /* line 128, src/scss/_components/_faqs.scss */
+  .e-faqs__block-body {
+    padding: 10px 50px 20px 15px;
+  }
+}
+
+/* line 135, src/scss/_components/_faqs.scss */
 .e-faqs__block-body p {
   font-family: SF Pro Text, sans-serif;
   line-height: 28px;
-  font-size: 18px;
   color: #333333;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 135, src/scss/_components/_faqs.scss */
+  .e-faqs__block-body p {
+    font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
+    font-size: calc(16px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 135, src/scss/_components/_faqs.scss */
+  .e-faqs__block-body p {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */
