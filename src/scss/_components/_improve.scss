@@ -2,8 +2,8 @@
 
 .e-improve {
   background-color: #050717;
-  @include fluid(padding-top, 320px, 767px, 48px, 97px);
-  @include fluid(padding-bottom, 320px, 767px, 66px, 132px);
+  @include fluid(padding-top, 320px, 1199px, 48px, 97px);
+  @include fluid(padding-bottom, 320px, 1199px, 66px, 132px);
 
   &__wrapper {
     min-height: 100vh;
