@@ -1145,14 +1145,7 @@ picture {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 23, src/scss/_components/_main.scss */
-  .e-main__wrapper {
-    min-height: auto;
-  }
-}
-
-/* line 33, src/scss/_components/_main.scss */
+/* line 30, src/scss/_components/_main.scss */
 .e-main__row-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1165,13 +1158,13 @@ picture {
   min-height: 50px;
 }
 
-/* line 39, src/scss/_components/_main.scss */
+/* line 36, src/scss/_components/_main.scss */
 .e-main__row-1 {
   padding-top: 70px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 39, src/scss/_components/_main.scss */
+  /* line 36, src/scss/_components/_main.scss */
   .e-main__row-1 {
     padding-top: -webkit-calc(70px + 40 * (100vw - 320px) / 447);
     padding-top: calc(70px + 40 * (100vw - 320px) / 447);
@@ -1179,18 +1172,18 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 39, src/scss/_components/_main.scss */
+  /* line 36, src/scss/_components/_main.scss */
   .e-main__row-1 {
     padding-top: 110px;
   }
 }
 
-/* line 43, src/scss/_components/_main.scss */
+/* line 40, src/scss/_components/_main.scss */
 .e-main__row-left, .e-main__row-right {
   width: 50%;
 }
 
-/* line 50, src/scss/_components/_main.scss */
+/* line 47, src/scss/_components/_main.scss */
 .e-main__row-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1206,7 +1199,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 57, src/scss/_components/_main.scss */
+/* line 54, src/scss/_components/_main.scss */
 .e-main__link {
   font-family: Open Sans, sans-serif;
   font-weight: 600;
@@ -1216,18 +1209,18 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 57, src/scss/_components/_main.scss */
+  /* line 54, src/scss/_components/_main.scss */
   .e-main__link {
     display: none;
   }
 }
 
-/* line 67, src/scss/_components/_main.scss */
+/* line 64, src/scss/_components/_main.scss */
 .e-main__link--open {
   margin-left: 50px;
 }
 
-/* line 72, src/scss/_components/_main.scss */
+/* line 69, src/scss/_components/_main.scss */
 .e-main__subtitle {
   padding-bottom: 14px;
   font-weight: bold;
@@ -1237,7 +1230,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 72, src/scss/_components/_main.scss */
+  /* line 69, src/scss/_components/_main.scss */
   .e-main__subtitle {
     font-size: -webkit-calc(26px + 14 * (100vw - 320px) / 1119);
     font-size: calc(26px + 14 * (100vw - 320px) / 1119);
@@ -1245,13 +1238,13 @@ picture {
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 72, src/scss/_components/_main.scss */
+  /* line 69, src/scss/_components/_main.scss */
   .e-main__subtitle {
     font-size: 40px;
   }
 }
 
-/* line 80, src/scss/_components/_main.scss */
+/* line 77, src/scss/_components/_main.scss */
 .e-main__title {
   padding-bottom: 30px;
   font-weight: bold;
@@ -1262,7 +1255,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 80, src/scss/_components/_main.scss */
+  /* line 77, src/scss/_components/_main.scss */
   .e-main__title {
     font-size: -webkit-calc(44px + 26 * (100vw - 320px) / 1119);
     font-size: calc(44px + 26 * (100vw - 320px) / 1119);
@@ -1270,13 +1263,13 @@ picture {
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 80, src/scss/_components/_main.scss */
+  /* line 77, src/scss/_components/_main.scss */
   .e-main__title {
     font-size: 70px;
   }
 }
 
-/* line 89, src/scss/_components/_main.scss */
+/* line 86, src/scss/_components/_main.scss */
 .e-main__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1882,39 +1875,40 @@ picture {
 @media screen and (max-width: 575px) {
   /* line 10, src/scss/_components/_assessment.scss */
   .e-assessment__bg {
+    position: relative;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
 }
 
-/* line 22, src/scss/_components/_assessment.scss */
+/* line 23, src/scss/_components/_assessment.scss */
 .e-assessment__bg-left {
   width: 38%;
   height: 100%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 22, src/scss/_components/_assessment.scss */
+  /* line 23, src/scss/_components/_assessment.scss */
   .e-assessment__bg-left {
-    width: 10%;
+    width: 0;
   }
 }
 
-/* line 30, src/scss/_components/_assessment.scss */
+/* line 31, src/scss/_components/_assessment.scss */
 .e-assessment__bg-right {
   width: 62%;
   height: 100%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 30, src/scss/_components/_assessment.scss */
+  /* line 31, src/scss/_components/_assessment.scss */
   .e-assessment__bg-right {
-    width: 90%;
+    width: 100%;
   }
 }
 
-/* line 37, src/scss/_components/_assessment.scss */
+/* line 38, src/scss/_components/_assessment.scss */
 .e-assessment__bg-right img {
   display: block;
   max-width: 100%;
@@ -1922,13 +1916,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 37, src/scss/_components/_assessment.scss */
+  /* line 38, src/scss/_components/_assessment.scss */
   .e-assessment__bg-right img {
     opacity: 0.8;
   }
 }
 
-/* line 48, src/scss/_components/_assessment.scss */
+@media screen and (max-width: 575px) {
+  /* line 38, src/scss/_components/_assessment.scss */
+  .e-assessment__bg-right img {
+    opacity: 1;
+  }
+}
+
+/* line 52, src/scss/_components/_assessment.scss */
 .e-assessment__wrapper {
   z-index: 2;
   position: relative;
@@ -1936,13 +1937,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, src/scss/_components/_assessment.scss */
+  /* line 52, src/scss/_components/_assessment.scss */
   .e-assessment__wrapper {
     min-height: auto;
   }
 }
 
-/* line 57, src/scss/_components/_assessment.scss */
+/* line 61, src/scss/_components/_assessment.scss */
 .e-assessment__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1950,19 +1951,19 @@ picture {
   display: flex;
 }
 
-/* line 61, src/scss/_components/_assessment.scss */
+/* line 65, src/scss/_components/_assessment.scss */
 .e-assessment__row-0 .e-assessment__row-left {
   width: 466px;
 }
 
-/* line 65, src/scss/_components/_assessment.scss */
+/* line 69, src/scss/_components/_assessment.scss */
 .e-assessment__row-0 .e-assessment__row-right {
   width: 100%;
   max-width: -webkit-calc(100% - 466px);
   max-width: calc(100% - 466px);
 }
 
-/* line 71, src/scss/_components/_assessment.scss */
+/* line 75, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 {
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1971,7 +1972,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 71, src/scss/_components/_assessment.scss */
+  /* line 75, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1979,7 +1980,7 @@ picture {
   }
 }
 
-/* line 77, src/scss/_components/_assessment.scss */
+/* line 81, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-left {
   position: relative;
   left: -70px;
@@ -1987,28 +1988,28 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 77, src/scss/_components/_assessment.scss */
+  /* line 81, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-left {
     width: 65%;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 77, src/scss/_components/_assessment.scss */
+  /* line 81, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-left {
     width: 100%;
     left: 0;
   }
 }
 
-/* line 89, src/scss/_components/_assessment.scss */
+/* line 93, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-left img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 96, src/scss/_components/_assessment.scss */
+/* line 100, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2024,7 +2025,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 96, src/scss/_components/_assessment.scss */
+  /* line 100, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right {
     max-width: -webkit-calc((100% - 65%) + 70px);
     max-width: calc((100% - 65%) + 70px);
@@ -2032,7 +2033,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 96, src/scss/_components/_assessment.scss */
+  /* line 100, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right {
     max-width: 100%;
     margin-left: 0;
@@ -2040,7 +2041,7 @@ picture {
   }
 }
 
-/* line 111, src/scss/_components/_assessment.scss */
+/* line 115, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div {
   width: 100%;
   max-width: 50%;
@@ -2048,57 +2049,57 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 111, src/scss/_components/_assessment.scss */
+  /* line 115, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div {
     max-width: 100%;
     padding-bottom: 30px;
   }
 }
 
-/* line 120, src/scss/_components/_assessment.scss */
+/* line 124, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(even) {
   padding-left: 40px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 120, src/scss/_components/_assessment.scss */
+  /* line 124, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(even) {
     padding-left: 0;
   }
 }
 
-/* line 127, src/scss/_components/_assessment.scss */
+/* line 131, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(odd) {
   padding-right: 40px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 127, src/scss/_components/_assessment.scss */
+  /* line 131, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(odd) {
     padding-right: 0;
   }
 }
 
-/* line 134, src/scss/_components/_assessment.scss */
+/* line 138, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(3), .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(4) {
   padding-bottom: 0;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 134, src/scss/_components/_assessment.scss */
+  /* line 138, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(3), .e-assessment__row-1 .e-assessment__row-right > div:nth-of-type(4) {
     padding-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 142, src/scss/_components/_assessment.scss */
+  /* line 146, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div:last-of-type {
     padding-bottom: 0;
   }
 }
 
-/* line 148, src/scss/_components/_assessment.scss */
+/* line 152, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div p {
   padding-bottom: 12px;
   font-family: SF Pro Text, sans-serif;
@@ -2110,7 +2111,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 148, src/scss/_components/_assessment.scss */
+  /* line 152, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div p {
     font-size: -webkit-calc(14px + 2 * (100vw - 320px) / 447);
     font-size: calc(14px + 2 * (100vw - 320px) / 447);
@@ -2118,13 +2119,13 @@ picture {
 }
 
 @media screen and (min-width: 767) {
-  /* line 148, src/scss/_components/_assessment.scss */
+  /* line 152, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div p {
     font-size: 16px;
   }
 }
 
-/* line 158, src/scss/_components/_assessment.scss */
+/* line 162, src/scss/_components/_assessment.scss */
 .e-assessment__row-1 .e-assessment__row-right > div span {
   font-family: Open Sans, sans-serif;
   font-style: normal;
@@ -2135,7 +2136,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 158, src/scss/_components/_assessment.scss */
+  /* line 162, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div span {
     font-size: -webkit-calc(14px + 2 * (100vw - 320px) / 447);
     font-size: calc(14px + 2 * (100vw - 320px) / 447);
@@ -2143,13 +2144,13 @@ picture {
 }
 
 @media screen and (min-width: 767) {
-  /* line 158, src/scss/_components/_assessment.scss */
+  /* line 162, src/scss/_components/_assessment.scss */
   .e-assessment__row-1 .e-assessment__row-right > div span {
     font-size: 16px;
   }
 }
 
-/* line 171, src/scss/_components/_assessment.scss */
+/* line 175, src/scss/_components/_assessment.scss */
 .e-assessment__title {
   text-transform: uppercase;
   font-weight: bold;
@@ -2160,7 +2161,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 171, src/scss/_components/_assessment.scss */
+  /* line 175, src/scss/_components/_assessment.scss */
   .e-assessment__title {
     padding-bottom: -webkit-calc(50px + 34 * (100vw - 320px) / 447);
     padding-bottom: calc(50px + 34 * (100vw - 320px) / 447);
@@ -2168,14 +2169,14 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 171, src/scss/_components/_assessment.scss */
+  /* line 175, src/scss/_components/_assessment.scss */
   .e-assessment__title {
     padding-bottom: 84px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 171, src/scss/_components/_assessment.scss */
+  /* line 175, src/scss/_components/_assessment.scss */
   .e-assessment__title {
     font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
     font-size: calc(38px + 22 * (100vw - 320px) / 1119);
@@ -2183,19 +2184,19 @@ picture {
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 171, src/scss/_components/_assessment.scss */
+  /* line 175, src/scss/_components/_assessment.scss */
   .e-assessment__title {
     font-size: 60px;
   }
 }
 
-/* line 180, src/scss/_components/_assessment.scss */
+/* line 184, src/scss/_components/_assessment.scss */
 .e-assessment__desc {
   padding-left: 36px;
   border-left: 4px solid #F30830;
 }
 
-/* line 184, src/scss/_components/_assessment.scss */
+/* line 188, src/scss/_components/_assessment.scss */
 .e-assessment__desc-text {
   font-family: Open Sans, sans-serif;
   line-height: 40px;
@@ -2204,7 +2205,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 184, src/scss/_components/_assessment.scss */
+  /* line 188, src/scss/_components/_assessment.scss */
   .e-assessment__desc-text {
     font-size: -webkit-calc(18px + 6 * (100vw - 320px) / 447);
     font-size: calc(18px + 6 * (100vw - 320px) / 447);
@@ -2212,13 +2213,13 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 184, src/scss/_components/_assessment.scss */
+  /* line 188, src/scss/_components/_assessment.scss */
   .e-assessment__desc-text {
     font-size: 24px;
   }
 }
 
-/* line 192, src/scss/_components/_assessment.scss */
+/* line 196, src/scss/_components/_assessment.scss */
 .e-assessment__text {
   width: 100%;
   max-width: 356px;
@@ -2230,7 +2231,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 192, src/scss/_components/_assessment.scss */
+  /* line 196, src/scss/_components/_assessment.scss */
   .e-assessment__text {
     font-size: -webkit-calc(14px + 2 * (100vw - 320px) / 447);
     font-size: calc(14px + 2 * (100vw - 320px) / 447);
@@ -2238,33 +2239,33 @@ picture {
 }
 
 @media screen and (min-width: 767) {
-  /* line 192, src/scss/_components/_assessment.scss */
+  /* line 196, src/scss/_components/_assessment.scss */
   .e-assessment__text {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 192, src/scss/_components/_assessment.scss */
+  /* line 196, src/scss/_components/_assessment.scss */
   .e-assessment__text {
     margin-left: 0;
     padding-left: 40px;
   }
 }
 
-/* line 205, src/scss/_components/_assessment.scss */
+/* line 209, src/scss/_components/_assessment.scss */
 .e-assessment__text-0 {
   padding-top: 50px;
   padding-bottom: 40px;
 }
 
-/* line 210, src/scss/_components/_assessment.scss */
+/* line 214, src/scss/_components/_assessment.scss */
 .e-assessment__text-1 {
   padding-bottom: 70px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 210, src/scss/_components/_assessment.scss */
+  /* line 214, src/scss/_components/_assessment.scss */
   .e-assessment__text-1 {
     padding-bottom: -webkit-calc(70px + 71 * (100vw - 320px) / 447);
     padding-bottom: calc(70px + 71 * (100vw - 320px) / 447);
@@ -2272,7 +2273,7 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 210, src/scss/_components/_assessment.scss */
+  /* line 214, src/scss/_components/_assessment.scss */
   .e-assessment__text-1 {
     padding-bottom: 141px;
   }
@@ -2301,14 +2302,7 @@ picture {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/_getting-started/_getting-started.scss */
-  .e-started__wrapper {
-    min-height: auto;
-  }
-}
-
-/* line 18, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 15, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back {
   display: none;
   -webkit-box-align: center;
@@ -2320,7 +2314,7 @@ picture {
   left: 0;
 }
 
-/* line 25, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 22, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back.is-active {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2328,7 +2322,7 @@ picture {
   display: flex;
 }
 
-/* line 30, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 27, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back:hover .icon-chevron-left,
 .e-started-back:hover span {
   color: #0a0a10;
@@ -2337,7 +2331,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 37, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 34, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back .icon-chevron-left {
   color: rgba(10, 10, 16, 0.5);
   font-size: 13px;
@@ -2346,7 +2340,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 43, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 40, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started-back span {
   padding-left: 10px;
   color: rgba(10, 10, 16, 0.5);
@@ -2359,31 +2353,31 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 57, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 54, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row {
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
-/* line 64, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 61, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__subtitle {
   padding-bottom: 4px;
 }
 
-/* line 68, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 65, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__title {
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
-/* line 73, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 70, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-0 .e-started__question {
   max-width: 748px;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 73, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 70, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-0 .e-started__question {
     padding-bottom: -webkit-calc(40px + 40 * (100vw - 320px) / 255);
     padding-bottom: calc(40px + 40 * (100vw - 320px) / 255);
@@ -2391,86 +2385,86 @@ picture {
 }
 
 @media screen and (min-width: 575px) {
-  /* line 73, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 70, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-0 .e-started__question {
     padding-bottom: 80px;
   }
 }
 
-/* line 80, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 77, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 {
   display: none;
 }
 
-/* line 84, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 81, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__title {
   padding-bottom: 20px;
 }
 
-/* line 89, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 86, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__description--opacity {
   padding-bottom: 0;
 }
 
-/* line 94, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 91, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 98, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 95, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-1 .e-started__answer-wrapper {
   padding-bottom: 42px;
 }
 
-/* line 104, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 101, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 {
   display: none;
 }
 
-/* line 108, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 105, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 112, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 109, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 117, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 114, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__description {
   padding-bottom: 40px;
 }
 
-/* line 122, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 119, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-2 .e-started__answer span {
   text-transform: capitalize;
 }
 
-/* line 129, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 126, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 {
   display: none;
 }
 
-/* line 133, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 130, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__subtitle {
   padding-bottom: 23px;
 }
 
-/* line 137, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 134, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__title {
   padding-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 142, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 139, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__description {
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 142, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 139, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-3 .e-started__description {
     padding-bottom: -webkit-calc(40px + 10 * (100vw - 320px) / 255);
     padding-bottom: calc(40px + 10 * (100vw - 320px) / 255);
@@ -2478,23 +2472,23 @@ picture {
 }
 
 @media screen and (min-width: 575px) {
-  /* line 142, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 139, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-3 .e-started__description {
     padding-bottom: 50px;
   }
 }
 
-/* line 146, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 143, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-3 .e-started__question {
   padding-bottom: 30px;
 }
 
-/* line 152, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 149, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 {
   display: none;
 }
 
-/* line 157, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 154, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2517,28 +2511,28 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 169, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 166, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 .icon-font {
   font-size: 20px;
 }
 
-/* line 173, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 170, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-0 span {
   padding-left: 10px;
 }
 
-/* line 177, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 174, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__title-1, .e-started__row-4 .e-started__title-2 {
   padding-bottom: 20px;
 }
 
-/* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 181, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-0 {
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 181, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-4 .e-started__description-0 {
     padding-bottom: -webkit-calc(40px + 20 * (100vw - 320px) / 255);
     padding-bottom: calc(40px + 20 * (100vw - 320px) / 255);
@@ -2546,19 +2540,19 @@ picture {
 }
 
 @media screen and (min-width: 575px) {
-  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 181, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-4 .e-started__description-0 {
     padding-bottom: 60px;
   }
 }
 
-/* line 187, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 184, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-1 {
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 187, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-4 .e-started__description-1 {
     padding-bottom: -webkit-calc(40px + 40 * (100vw - 320px) / 255);
     padding-bottom: calc(40px + 40 * (100vw - 320px) / 255);
@@ -2566,44 +2560,44 @@ picture {
 }
 
 @media screen and (min-width: 575px) {
-  /* line 187, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 184, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-4 .e-started__description-1 {
     padding-bottom: 80px;
   }
 }
 
-/* line 190, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 187, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-4 .e-started__description-2 {
   padding-bottom: 0;
 }
 
-/* line 197, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 194, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 {
   display: none;
 }
 
-/* line 201, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 198, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 202, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description {
   max-width: 870px;
 }
 
-/* line 208, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 205, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-0 {
   padding-bottom: 30px;
 }
 
-/* line 211, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 208, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-5 .e-started__description-1 {
   padding-bottom: 45px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 211, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 208, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-5 .e-started__description-1 {
     padding-bottom: -webkit-calc(45px + 45 * (100vw - 320px) / 255);
     padding-bottom: calc(45px + 45 * (100vw - 320px) / 255);
@@ -2611,29 +2605,29 @@ picture {
 }
 
 @media screen and (min-width: 575px) {
-  /* line 211, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 208, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__row-5 .e-started__description-1 {
     padding-bottom: 90px;
   }
 }
 
-/* line 218, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 215, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 {
   display: none;
 }
 
-/* line 222, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 219, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .e-started__title {
   padding-bottom: 30px;
 }
 
-/* line 227, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 224, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-wrapper {
   height: auto;
   min-height: 50px;
 }
 
-/* line 232, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 229, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -2641,12 +2635,12 @@ picture {
           align-items: flex-start;
 }
 
-/* line 235, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 232, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__row-6 .c-form__checkbox-content > div {
   padding-top: 5px;
 }
 
-/* line 245, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 242, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__title {
   color: #000;
   font-weight: bold;
@@ -2655,7 +2649,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 245, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 242, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__title {
     font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
     font-size: calc(38px + 22 * (100vw - 320px) / 1119);
@@ -2663,13 +2657,13 @@ picture {
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 245, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 242, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__title {
     font-size: 60px;
   }
 }
 
-/* line 255, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 252, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__subtitle {
   font-family: 'SF Pro Text', sans-serif;
   font-weight: bold;
@@ -2681,7 +2675,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 255, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 252, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__subtitle {
     font-size: -webkit-calc(12px + 2 * (100vw - 320px) / 447);
     font-size: calc(12px + 2 * (100vw - 320px) / 447);
@@ -2689,13 +2683,13 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 255, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 252, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__subtitle {
     font-size: 14px;
   }
 }
 
-/* line 268, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 265, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description {
   width: 100%;
   max-width: 748px;
@@ -2709,7 +2703,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 268, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 265, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__description {
     font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
     font-size: calc(16px + 2 * (100vw - 320px) / 447);
@@ -2717,18 +2711,18 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 268, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 265, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__description {
     font-size: 18px;
   }
 }
 
-/* line 279, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 276, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__description--opacity {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 287, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 284, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__question {
   width: 100%;
   margin-left: auto;
@@ -2742,7 +2736,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 287, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 284, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__question {
     font-size: -webkit-calc(20px + 2 * (100vw - 320px) / 447);
     font-size: calc(20px + 2 * (100vw - 320px) / 447);
@@ -2750,13 +2744,13 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 287, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 284, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__question {
     font-size: 22px;
   }
 }
 
-/* line 302, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 299, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2786,19 +2780,19 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 314, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 311, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no {
   background-color: #E3E5EB;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 314, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 311, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__answer--no {
     margin-bottom: 20px;
   }
 }
 
-/* line 320, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 317, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no:hover {
   background-color: rgba(227, 229, 235, 0.75);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2806,18 +2800,18 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 325, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 322, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--no span,
 .e-started__answer--no .icon-font {
   color: #333C52;
 }
 
-/* line 331, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 328, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes {
   background-color: rgba(14, 150, 52, 0.3);
 }
 
-/* line 334, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 331, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes:hover {
   background-color: rgba(14, 150, 52, 0.2);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2825,13 +2819,13 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 339, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 336, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer--yes span,
 .e-started__answer--yes .icon-font {
   color: #0E9634;
 }
 
-/* line 345, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 342, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2848,7 +2842,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 345, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 342, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__answer-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2856,7 +2850,7 @@ picture {
   }
 }
 
-/* line 354, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 351, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer span {
   padding-top: 10px;
   font-family: Open Sans, sans-serif;
@@ -2866,19 +2860,19 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 364, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 361, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-font {
   font-size: 32px;
 }
 
-/* line 367, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 364, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__answer .icon-chevron-right {
   position: relative;
   left: -2px;
   font-size: 30px;
 }
 
-/* line 376, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 373, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2899,21 +2893,21 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 387, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 384, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) {
   width: 100%;
   max-width: -webkit-calc(100% - 96px);
   max-width: calc(100% - 96px);
 }
 
-/* line 391, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 388, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(1) span {
   font-weight: bold;
   font-size: 22px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 391, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 388, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account > div:nth-of-type(1) span {
     font-size: -webkit-calc(22px + 6 * (100vw - 320px) / 447);
     font-size: calc(22px + 6 * (100vw - 320px) / 447);
@@ -2921,13 +2915,13 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 391, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 388, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account > div:nth-of-type(1) span {
     font-size: 28px;
   }
 }
 
-/* line 396, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 393, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2940,7 +2934,7 @@ picture {
   width: 96px;
 }
 
-/* line 401, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 398, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2961,7 +2955,7 @@ picture {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 410, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 407, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account > div:nth-of-type(2) span .icon-font {
   position: relative;
   left: -2px;
@@ -2969,7 +2963,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 420, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 417, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open {
   padding: 40px;
   margin-right: 20px;
@@ -2977,7 +2971,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 420, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 417, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--open {
     margin-right: 0;
     margin-bottom: 20px;
@@ -2985,13 +2979,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 420, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 417, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--open {
     padding: 20px;
   }
 }
 
-/* line 432, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 429, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--open:hover {
   background-color: rgba(21, 51, 85, 0.95);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2999,7 +2993,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 438, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 435, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate {
   padding: 40px 40px 40px 30px;
   margin-left: 20px;
@@ -3007,20 +3001,20 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 438, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 435, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--initiate {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 438, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 435, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account--initiate {
     padding: 20px;
   }
 }
 
-/* line 449, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 446, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account--initiate:hover {
   background-color: rgba(30, 38, 58, 0.95);
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3028,7 +3022,7 @@ picture {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 455, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 452, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__account-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3041,7 +3035,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 455, src/scss/_components/_getting-started/_getting-started.scss */
+  /* line 452, src/scss/_components/_getting-started/_getting-started.scss */
   .e-started__account-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3049,7 +3043,7 @@ picture {
   }
 }
 
-/* line 464, src/scss/_components/_getting-started/_getting-started.scss */
+/* line 461, src/scss/_components/_getting-started/_getting-started.scss */
 .e-started__btn {
   outline: none;
   cursor: pointer;
@@ -3090,8 +3084,23 @@ picture {
 /* line 8, src/scss/_components/_how.scss */
 .e-how__wrapper {
   min-height: 100vh;
-  padding-top: 120px;
   padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 8, src/scss/_components/_how.scss */
+  .e-how__wrapper {
+    padding-top: -webkit-calc(60px + 60 * (100vw - 320px) / 447);
+    padding-top: calc(60px + 60 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 8, src/scss/_components/_how.scss */
+  .e-how__wrapper {
+    padding-top: 120px;
+  }
 }
 
 /* line 14, src/scss/_components/_how.scss */
@@ -3099,9 +3108,24 @@ picture {
   padding-bottom: 20px;
   text-align: center;
   font-weight: bold;
-  font-size: 60px;
   color: #000000;
   text-transform: uppercase;
+  font-size: 38px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 14, src/scss/_components/_how.scss */
+  .e-how__title {
+    font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
+    font-size: calc(38px + 22 * (100vw - 320px) / 1119);
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  /* line 14, src/scss/_components/_how.scss */
+  .e-how__title {
+    font-size: 60px;
+  }
 }
 
 /* line 23, src/scss/_components/_how.scss */
@@ -3113,9 +3137,24 @@ picture {
   padding-bottom: 73px;
   font-family: SF Pro Text, sans-serif;
   line-height: 30px;
-  font-size: 18px;
   text-align: center;
   color: #0A0A10;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 23, src/scss/_components/_how.scss */
+  .e-how__desc {
+    font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
+    font-size: calc(16px + 2 * (100vw - 320px) / 447);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* line 23, src/scss/_components/_how.scss */
+  .e-how__desc {
+    font-size: 18px;
+  }
 }
 
 /* line 3, src/scss/_components/_faqs.scss */

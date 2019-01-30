@@ -9,9 +9,6 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    @include adaptive(767) {
-      min-height: auto;
-    }
   }
 
   // btn back

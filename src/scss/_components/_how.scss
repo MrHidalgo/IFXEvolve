@@ -7,17 +7,17 @@
 
   &__wrapper {
     min-height: 100vh;
-    padding-top: 120px;
     padding-bottom: 60px;
+    @include fluid(padding-top, 320px, 767px, 60px, 120px);
   }
 
   &__title {
     padding-bottom: 20px;
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
     color: #000000;
     text-transform: uppercase;
+    @include fluid(font-size, 320px, 1439px, 38px, 60px);
   }
 
   &__desc {
@@ -28,9 +28,9 @@
     padding-bottom: 73px;
     font-family: SF Pro Text, sans-serif;
     line-height: 30px;
-    font-size: 18px;
     text-align: center;
     color: #0A0A10;
+    @include fluid(font-size, 320px, 767px, 16px, 18px);
   }
 
   //.swiper {

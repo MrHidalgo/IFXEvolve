@@ -16,6 +16,7 @@
     height: 100%;
     padding-top: 50px;
     @include adaptive(575) {
+      position: relative;
       flex-wrap: wrap;
     }
 
@@ -23,7 +24,7 @@
       width: 38%;
       height: 100%;
       @include adaptive(575) {
-        width: 10%;
+        width: 0;
       }
     }
 
@@ -31,7 +32,7 @@
       width: 62%;
       height: 100%;
       @include adaptive(575) {
-        width: 90%;
+        width: 100%;
       }
 
       img {
@@ -40,6 +41,9 @@
         height: auto;
         @include adaptive(767) {
           opacity: 0.8;
+        }
+        @include adaptive(575) {
+          opacity: 1;
         }
       }
     }
