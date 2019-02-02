@@ -30,7 +30,7 @@ const renderPug = () => {
 		.src(srcPath)
 		.pipe(plumber(configOption.pipeBreaking.err))
 		// .pipe(gulpif(global.isPugWatching, emitty.stream(global.emittyChangedPugFile)))
-		.pipe(emitty.stream(global.emittyChangedPugFile))
+		// .pipe(emitty.stream(global.emittyChangedPugFile))
 		.pipe(frontMatter({
 			property: 'data'
 		}))

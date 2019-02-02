@@ -2,13 +2,29 @@
 
 .e-how {
   position: relative;
-  min-height: 900px;
   background-color: #EDEFF2;
+  min-height: 100vh;
 
   &__wrapper {
-    min-height: 100vh;
+    position: relative;
     padding-bottom: 60px;
-    @include fluid(padding-top, 320px, 767px, 60px, 120px);
+    padding-top: 120px;
+  }
+
+  &__section {
+    min-height: 25vh;
+    transform: translateY(-100%);
+
+    p {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  &__title,
+  &__desc {
+    z-index: 2;
+    position: relative;
   }
 
   &__title {
@@ -33,27 +49,54 @@
     @include fluid(font-size, 320px, 767px, 16px, 18px);
   }
 
-  //.swiper {
-  //  &-slide {
-  //    padding-left: 140px;
-  //
-  //    &.swiper-slide-active {
-  //      p {
-  //        opacity: 1;
-  //      }
-  //    }
-  //
-  //    p {
-  //      opacity: 0.1;
-  //      font-family: SF Pro Text, sans-serif;
-  //      font-style: normal;
-  //      font-weight: normal;
-  //      line-height: 30px;
-  //      font-size: 18px;
-  //      color: #0A0A10;
-  //    }
-  //  }
-  //}
+  &__heading {
+    z-index: 2;
+    position: sticky;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + (120px + 173px));
+      background: linear-gradient(to bottom, rgba(237,239,242,1) 0%,rgba(237,239,242,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeff2', endColorstr='#a6edeff2',GradientType=0 );
+    }
+  }
+
+  &__body {
+    z-index: 1;
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-right {
+      position: relative;
+
+      > div {
+        padding-top: 200px;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      p {
+        min-height: 30px;
+        padding-bottom: 55px;
+        font-family: SF Pro Text, sans-serif;
+        line-height: 30px;
+        font-size: 18px;
+        color: #0A0A10;
+        @include transition(opacity);
+      }
+    }
+  }
 }
 
 // SECTION how it works :: END

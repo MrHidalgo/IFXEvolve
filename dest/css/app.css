@@ -1116,20 +1116,21 @@ picture {
 
 /* line 3, src/scss/_components/_main.scss */
 .e-main {
+  overflow: hidden;
   position: relative;
   padding-top: 95px;
   padding-bottom: 50px;
   background-color: #050716;
 }
 
-/* line 9, src/scss/_components/_main.scss */
-.e-main:before {
-  content: '';
+/* line 10, src/scss/_components/_main.scss */
+.e-main__bg {
   z-index: 0;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: -100px;
+  width: -webkit-calc(100% + 200px);
+  width: calc(100% + 200px);
   height: 100%;
   background-image: url("../img/img-bg-main.png");
   background-repeat: no-repeat;
@@ -3077,33 +3078,38 @@ picture {
 /* line 3, src/scss/_components/_how.scss */
 .e-how {
   position: relative;
-  min-height: 900px;
   background-color: #EDEFF2;
+  min-height: 100vh;
 }
 
 /* line 8, src/scss/_components/_how.scss */
 .e-how__wrapper {
-  min-height: 100vh;
+  position: relative;
   padding-bottom: 60px;
-  padding-top: 60px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 8, src/scss/_components/_how.scss */
-  .e-how__wrapper {
-    padding-top: -webkit-calc(60px + 60 * (100vw - 320px) / 447);
-    padding-top: calc(60px + 60 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 8, src/scss/_components/_how.scss */
-  .e-how__wrapper {
-    padding-top: 120px;
-  }
+  padding-top: 120px;
 }
 
 /* line 14, src/scss/_components/_how.scss */
+.e-how__section {
+  min-height: 25vh;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+/* line 18, src/scss/_components/_how.scss */
+.e-how__section p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* line 24, src/scss/_components/_how.scss */
+.e-how__title, .e-how__desc {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 30, src/scss/_components/_how.scss */
 .e-how__title {
   padding-bottom: 20px;
   text-align: center;
@@ -3114,7 +3120,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 14, src/scss/_components/_how.scss */
+  /* line 30, src/scss/_components/_how.scss */
   .e-how__title {
     font-size: -webkit-calc(38px + 22 * (100vw - 320px) / 1119);
     font-size: calc(38px + 22 * (100vw - 320px) / 1119);
@@ -3122,13 +3128,13 @@ picture {
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 14, src/scss/_components/_how.scss */
+  /* line 30, src/scss/_components/_how.scss */
   .e-how__title {
     font-size: 60px;
   }
 }
 
-/* line 23, src/scss/_components/_how.scss */
+/* line 39, src/scss/_components/_how.scss */
 .e-how__desc {
   width: 100%;
   max-width: 748px;
@@ -3143,7 +3149,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 23, src/scss/_components/_how.scss */
+  /* line 39, src/scss/_components/_how.scss */
   .e-how__desc {
     font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 447);
     font-size: calc(16px + 2 * (100vw - 320px) / 447);
@@ -3151,10 +3157,82 @@ picture {
 }
 
 @media screen and (min-width: 767px) {
-  /* line 23, src/scss/_components/_how.scss */
+  /* line 39, src/scss/_components/_how.scss */
   .e-how__desc {
     font-size: 18px;
   }
+}
+
+/* line 52, src/scss/_components/_how.scss */
+.e-how__heading {
+  z-index: 2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 59, src/scss/_components/_how.scss */
+.e-how__heading:before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% + (120px + 173px));
+  height: calc(100% + (120px + 173px));
+  background: -webkit-gradient(linear, left top, left bottom, from(#edeff2), to(rgba(237, 239, 242, 0)));
+  background: -webkit-linear-gradient(top, #edeff2 0%, rgba(237, 239, 242, 0) 100%);
+  background: -o-linear-gradient(top, #edeff2 0%, rgba(237, 239, 242, 0) 100%);
+  background: linear-gradient(to bottom, #edeff2 0%, rgba(237, 239, 242, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeff2', endColorstr='#a6edeff2',GradientType=0 );
+}
+
+/* line 71, src/scss/_components/_how.scss */
+.e-how__body {
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 78, src/scss/_components/_how.scss */
+.e-how__body-right {
+  position: relative;
+}
+
+/* line 81, src/scss/_components/_how.scss */
+.e-how__body-right > div {
+  padding-top: 200px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 89, src/scss/_components/_how.scss */
+.e-how__body-right p {
+  min-height: 30px;
+  padding-bottom: 55px;
+  font-family: SF Pro Text, sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  color: #0A0A10;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/_faqs.scss */

@@ -1,26 +1,25 @@
 // SECTION how it works :: START
 
-section#e-how.e-how.pagepiling
+section#e-how.e-how
   .c-grid
     .e-how__wrapper
 
-      h1.e-how__title!= "how it works"
+      .e-how__heading(sticky-js)
+        h1.e-how__title!= "how it works"
+        p.e-how__desc!= "During Phase 1 Traders are continiously monitored and need to satisfy the qualifying conditions at all times. IFXEvolve is a performance based program and various factors are taken into account to consider funding a trader."
 
-      h1.e-how__desc!= "During Phase 1 Traders are continiously monitored and need to satisfy the qualifying conditions at all times. IFXEvolve is a performance based program and various factors are taken into account to consider funding a trader."
-      //mixin swiperContent()
-      //  .swiper-slide
-      //    p!= "Sign up by opening a live funded account with a minimum opening balance of USD500."
-      //  .swiper-slide
-      //    p!= "Register for the Evolve Program/initiative."
-      //  .swiper-slide
-      //    p!= "On approval you receive access to Phase 1. The minimum duration for Phase 1 is 6 months, after which your total performance is evaluated and your application to progress to Phase 2 is evaluated by the IFXEvolve committee."
-      //  .swiper-slide
-      //    p!= "Sign up by opening a live funded account with a minimum opening balance of USD500."
-      //  .swiper-slide
-      //    p!= "Register for the Evolve Program/initiative."
-      //  .swiper-slide
-      //    p!= "On approval you receive access to Phase 1. The minimum duration for Phase 1 is 6 months, after which your total performance is evaluated and your application to progress to Phase 2 is evaluated by the IFXEvolve committee."
-      //
-      //+swiper('swiper-container--how', 'swiperContent', false, false, false)
+        .e-how__body
+          .e-how__body-left
+
+      .e-how__body-right
+        div
+            p!= "Sign up by opening a live funded account with a minimum opening balance of USD500."
+            p!= "Register for the Evolve Program/initiative."
+            p!= "On approval you receive access to Phase 1. The minimum duration for Phase 1 is 6 months, after which your total performance is evaluated and your application to progress to Phase 2 is evaluated by the IFXEvolve committee."
+            p!= "Sign up by opening a live funded account with a minimum opening balance of USD500."
+            p!= "Register for the Evolve Program/initiative."
+            p!= "On approval you receive access to Phase 1. The minimum duration for Phase 1 is 6 months, after which your total performance is evaluated and your application to progress to Phase 2 is evaluated by the IFXEvolve committee."
+
+      .e-how__section.e-how__section-1(data-section-id='1')
 
 // SECTION how it works :: END

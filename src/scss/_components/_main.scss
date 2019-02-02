@@ -1,18 +1,18 @@
 // SECTION main :: START
 
 .e-main {
+  overflow: hidden;
   position: relative;
   padding-top: 95px;
   padding-bottom: 50px;
   background-color: #050716;
 
-  &:before {
-    content: '';
+  &__bg {
     z-index: 0;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: -100px;
+    width: calc(100% + 200px);
     height: 100%;
     background-image: url('../img/img-bg-main.png');
     background-repeat: no-repeat;
